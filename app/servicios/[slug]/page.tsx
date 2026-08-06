@@ -108,19 +108,12 @@ export default function ServiceDetailPage({ params }: ServiceDetailPageProps) {
                   </p>
                 </div>
 
-                <div className="flex gap-3 w-full sm:w-auto">
-                  <a
-                    href={`tel:${phoneRaw}`}
-                    className="flex-1 sm:flex-initial flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-4 py-2.5 text-xs font-bold text-white hover:scale-105 active:scale-95 transition-transform"
-                  >
-                    <Icons.Phone className="h-4 w-4 animate-bounce" />
-                    <span>Llamar</span>
-                  </a>
+                <div className="flex w-full sm:w-auto">
                   <a
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 sm:flex-initial flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-4 py-2.5 text-xs font-bold text-white hover:scale-105 active:scale-95 transition-transform"
+                    className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-2.5 text-xs font-bold text-white hover:scale-105 active:scale-95 transition-transform"
                   >
                     <Icons.MessageSquare className="h-4 w-4 fill-current" />
                     <span>WhatsApp</span>

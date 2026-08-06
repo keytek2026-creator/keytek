@@ -48,11 +48,13 @@ export function ZonasCobertura() {
 
             <div className="pt-8 border-t border-white/15 mt-8 flex flex-col gap-3">
               <a
-                href={`tel:${phoneRaw}`}
-                className="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-red-600 to-red-500 py-3 text-sm font-bold text-white hover:scale-105 active:scale-95 transition-transform"
+                href={`https://wa.me/${phoneRaw}?text=${encodeURIComponent("Hola, necesito un cerrajero.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full rounded-xl bg-[#25D366] hover:bg-[#20ba59] py-3 text-sm font-bold text-white hover:scale-105 active:scale-95 transition-transform"
               >
-                <Phone className="h-4 w-4 text-white" />
-                <span>Llamar por Urgencia</span>
+                <MessageSquare className="h-4 w-4 fill-current" />
+                <span>Contactar por WhatsApp</span>
               </a>
             </div>
           </div>

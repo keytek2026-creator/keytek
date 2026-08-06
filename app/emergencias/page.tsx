@@ -43,24 +43,15 @@ export default function EmergenciasPage() {
             ¿Perdiste tus llaves, te las robaron o la puerta quedó trabada? No te preocupes. Llámanos o escríbenos. Llegada y atención **de acuerdo a coordinación** en todo Santiago.
           </p>
 
-          {/* GIANT mobile-friendly CTA double buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full max-w-md justify-center mb-16">
+          {/* GIANT mobile-friendly CTA button */}
+          <div className="w-full max-w-sm flex justify-center mb-16">
             
-            {/* GIANT CALL BUTTON */}
-            <a
-              href={`tel:${phoneRaw}`}
-              className="flex items-center justify-center gap-3 rounded-2xl bg-red-600 hover:bg-red-700 px-8 py-5 text-xl font-extrabold text-white shadow-2xl shadow-red-600/50 hover:scale-105 active:scale-95 transition-transform"
-            >
-              <Phone className="h-6 w-6 text-white animate-bounce shrink-0" />
-              <span>LLAMAR AHORA</span>
-            </a>
-
             {/* GIANT WHATSAPP BUTTON */}
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] px-8 py-5 text-xl font-extrabold text-white shadow-2xl shadow-[#25D366]/35 hover:scale-105 active:scale-95 transition-transform"
+              className="w-full flex items-center justify-center gap-3 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] px-8 py-5 text-xl font-extrabold text-white shadow-2xl shadow-[#25D366]/35 hover:scale-105 active:scale-95 transition-transform"
             >
               {/* WhatsApp Icon */}
               <svg className="h-6 w-6 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +59,6 @@ export default function EmergenciasPage() {
               </svg>
               <span>WHATSAPP URGENTE</span>
             </a>
-
           </div>
 
           {/* Quick checklist indicators */}

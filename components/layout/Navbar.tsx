@@ -73,13 +73,6 @@ export function Navbar() {
 
         {/* Action CTAs */}
         <div className="hidden sm:flex items-center gap-4">
-          <a
-            href={`tel:${phoneRaw}`}
-            className="flex items-center gap-2 text-sm font-semibold text-keytek-navy hover:text-keytek-blue transition-colors px-3 py-2 rounded-lg hover:bg-keytek-bg-soft"
-          >
-            <Phone className="h-4 w-4 text-keytek-blue animate-bounce" />
-            <span>Llamar ahora</span>
-          </a>
           
           <Link
             href="/emergencias"
@@ -120,13 +113,6 @@ export function Navbar() {
           </nav>
           
           <div className="flex flex-col gap-4 mt-auto pb-10">
-            <a
-              href={`tel:${phoneRaw}`}
-              className="flex items-center justify-center gap-3 w-full rounded-xl border border-gray-200 py-3.5 text-base font-semibold text-keytek-navy bg-keytek-bg-soft hover:bg-gray-100 transition-all"
-            >
-              <Phone className="h-5 w-5 text-keytek-blue" />
-              <span>Llamar al {CONTACT_INFO.phone}</span>
-            </a>
             
             <Link
               href="/emergencias"

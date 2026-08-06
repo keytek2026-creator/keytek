@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Phone, Clock, ShieldCheck, UserCheck, Key } from "lucide-react"
 import { CONTACT_INFO } from "@/lib/data"
 
@@ -62,14 +63,13 @@ export function Hero() {
           {/* Double Call-to-Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full justify-center mb-16">
             
-            {/* Primary Phone Button */}
-            <a
-              href={`tel:${phoneRaw}`}
-              className="flex items-center justify-center gap-3 w-full sm:w-auto rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-8 py-4 text-lg font-bold text-white shadow-xl shadow-red-500/30 hover:scale-105 active:scale-95 transition-all duration-200 group"
+            {/* Secondary Services Button */}
+            <Link
+              href="/servicios"
+              className="flex items-center justify-center gap-3 w-full sm:w-auto rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all duration-200 hover:scale-105"
             >
-              <Phone className="h-5 w-5 text-white animate-bounce group-hover:scale-110" />
-              <span>Llamar al Cerrajero</span>
-            </a>
+              <span>Ver Servicios</span>
+            </Link>
 
             {/* Secondary WhatsApp Button */}
             <a
