@@ -1,4 +1,4 @@
-import { Phone, MessageSquare, Clock } from "lucide-react"
+import { MessageSquare, Clock } from "lucide-react"
 import { CONTACT_INFO } from "@/lib/data"
 
 export function CTAEmergencia() {
@@ -33,35 +33,24 @@ export function CTAEmergencia() {
             ¿Te quedaste fuera o necesitas cambiar cerraduras urgente?
           </h2>
           
-          <p className="text-gray-200 text-base sm:text-lg max-w-2xl leading-relaxed">
-            No esperes más. Llámanos por teléfono o escríbenos directamente por WhatsApp. Coordinamos de inmediato el despacho de un cerrajero a tu comuna.
+          <p className="text-gray-200 text-base sm:text-lg max-w-2xl leading-relaxed text-center">
+            No esperes más. Escríbenos directamente por WhatsApp. Coordinamos de inmediato el despacho de un cerrajero a tu comuna.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-4">
-            
-            {/* Call button */}
-            <a
-              href={`tel:${phoneRaw}`}
-              className="flex items-center justify-center gap-2.5 w-full sm:w-auto rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-8 py-3.5 text-base font-bold text-white shadow-xl shadow-red-500/20 hover:scale-105 active:scale-95 transition-transform"
-            >
-              <Phone className="h-5 w-5 animate-bounce" />
-              <span>Llamar al Cerrajero</span>
-            </a>
-
+          <div className="w-full max-w-md flex justify-center mt-6">
             {/* WhatsApp button */}
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2.5 w-full sm:w-auto rounded-xl bg-[#25D366] px-8 py-3.5 text-base font-bold text-white shadow-xl shadow-[#25D366]/20 hover:scale-105 active:scale-95 transition-transform"
+              className="w-full flex items-center justify-center gap-3 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] px-8 py-5 text-xl font-extrabold text-white shadow-2xl shadow-[#25D366]/35 hover:scale-105 active:scale-95 transition-transform"
             >
-              <MessageSquare className="h-5 w-5 fill-current" />
-              <span>Contactar por WhatsApp</span>
+              <MessageSquare className="h-6 w-6 fill-current shrink-0 animate-pulse" />
+              <span>WHATSAPP URGENTE</span>
             </a>
-
           </div>
 
-          <p className="text-xs text-gray-300 font-semibold tracking-wide uppercase mt-4">
+          <p className="text-xs text-gray-300 font-semibold tracking-wide uppercase mt-6">
             Llegada: de acuerdo a coordinación • Presupuesto transparente sin compromiso
           </p>
 

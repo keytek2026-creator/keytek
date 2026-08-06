@@ -12,17 +12,17 @@ export default function Home() {
       {/* 1. Hero & Trust Badges */}
       <Hero />
 
-      {/* 2. Services Grid (6 cards) */}
-      <ServiciosGrid />
-
-      {/* 3. Operational Advantages Info */}
+      {/* 2. Operational Advantages Info (Why Choose Us) */}
       <PorQueElegirnos />
 
-      {/* 4. Coverage Zones & Sector Fallback Alerts */}
-      <ZonasCobertura />
+      {/* 3. Services Grid (6 cards) */}
+      <ServiciosGrid />
 
-      {/* 5. Direct Conversion Emergency Banner */}
+      {/* 4. Direct Conversion Emergency Banner */}
       <CTAEmergencia />
+
+      {/* 5. Coverage Zones & Sector Fallback Alerts */}
+      <ZonasCobertura />
 
       {/* 6. Customer Testimonials Slideshow */}
       <Testimonios />
