@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
   title: "Cerrajero de Urgencia en Santiago | Keytek Emergencias",
-  description: "Servicio de cerrajería express a domicilio. Llegamos a tu comuna en 20 minutos. Aperturas limpias y cambio de cerraduras de urgencia.",
+  description: "Servicio de cerrajería express a domicilio. Llegada de acuerdo a coordinación con el cliente. Aperturas limpias y cambio de cerraduras de urgencia.",
 }
 
 export default function EmergenciasPage() {
@@ -40,7 +40,7 @@ export default function EmergenciasPage() {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-250 mb-12 max-w-2xl leading-relaxed">
-            ¿Perdiste tus llaves, te las robaron o la puerta quedó trabada? No te preocupes. Llámanos o escríbenos. Llegamos en **20 minutos promedio** en todo Santiago.
+            ¿Perdiste tus llaves, te las robaron o la puerta quedó trabada? No te preocupes. Llámanos o escríbenos. Llegada y atención **de acuerdo a coordinación** en todo Santiago.
           </p>
 
           {/* GIANT mobile-friendly CTA double buttons */}

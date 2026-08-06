@@ -10,7 +10,7 @@ export const SERVICES: Service[] = [
     features: [
       "Servicio de urgencia express",
       "Apertura no destructiva garantizada",
-      "Llegada en 20 minutos promedio",
+      "Llegada de acuerdo a coordinación",
       "Atención en casas, departamentos y comercios"
     ],
     detailedContent: "Perder las llaves o dejarlas puestas por dentro es una de las situaciones de urgencia más comunes. Nuestro equipo está altamente capacitado en técnicas avanzadas de ganzuado y decodificación para abrir puertas sin dañar el marco, la puerta o el cilindro. Si la cerradura está trabada, procedemos con métodos profesionales para reemplazar el cilindro en el acto y devolver la seguridad a tu hogar de inmediato.",
@@ -98,7 +98,7 @@ export const REVIEWS: Review[] = [
     id: "1",
     name: "Carolina Silva",
     rating: 5,
-    text: "Excelente servicio. Llegaron en 15 minutos a Las Condes después de que mi llave se quebró en la cerradura. El técnico fue muy amable y resolvió todo súper rápido sin dañar la puerta. Muy recomendados.",
+    text: "Excelente servicio. Llegaron súper rápido a Las Condes después de que mi llave se quebró en la cerradura. El técnico fue muy amable y resolvió todo de forma impecable sin dañar la puerta. Muy recomendados.",
     comuna: "Las Condes",
     date: "Hace 2 semanas"
   },

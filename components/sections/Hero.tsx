@@ -51,7 +51,7 @@ export function Hero() {
 
           {/* Main Headline */}
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6 max-w-3xl">
-            Cerrajeros de Confianza con Respuesta en <span className="text-[#4FA8E0]">20 Minutos</span>
+            Cerrajeros de Confianza con Respuesta <span className="text-[#4FA8E0]">según Coordinación</span>
           </h1>
 
           {/* Subtitle */}
@@ -94,7 +94,7 @@ export function Hero() {
                 <Clock className="h-6 w-6" />
               </div>
               <span className="text-xs font-semibold tracking-wider text-gray-300 uppercase">Llegada Rápida</span>
-              <span className="text-sm font-bold">20 Minutos Promedio</span>
+              <span className="text-sm font-bold">Según Coordinación</span>
             </div>
 
             <div className="flex flex-col items-center gap-2">

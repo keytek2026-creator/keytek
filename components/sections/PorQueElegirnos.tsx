@@ -4,8 +4,8 @@ export function PorQueElegirnos() {
   const features = [
     {
       icon: Clock,
-      title: "Llegada en 20 Minutos",
-      description: "Entendemos la urgencia. Tenemos unidades móviles distribuidas estratégicamente por todo Santiago para llegar a tu ubicación en tiempo récord."
+      title: "Llegada según Coordinación",
+      description: "Coordinamos contigo de manera directa. Tenemos unidades móviles distribuidas estratégicamente por todo Santiago para acudir a tu ubicación a la brevedad."
     },
     {
       icon: ShieldCheck,
@@ -15,7 +15,7 @@ export function PorQueElegirnos() {
     {
       icon: Wrench,
       title: "Métodos No Destructivos",
-      description: "Utilizamos herramientas tecnológicas de ganzuado profesional para abrir tus puertas o vehículos sin rayar marcos, romper vidrios ni dañar cerraduras."
+      description: "Utilizamos herramientas tecnológicas de ganzuado profesional para abrir tus puertas o accesos sin rayar marcos ni dañar cerraduras."
     },
     {
       icon: CircleDollarSign,

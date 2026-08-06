@@ -41,7 +41,7 @@ export function ZonasCobertura() {
                 </li>
                 <li className="flex items-center gap-3">
                   <ShieldCheck className="h-5 w-5 text-[#4FA8E0] shrink-0" />
-                  <span>Tiempos de llegada entre 15 a 30 minutos máximo</span>
+                  <span>Llegada de acuerdo a coordinación previa</span>
                 </li>
               </ul>
             </div>

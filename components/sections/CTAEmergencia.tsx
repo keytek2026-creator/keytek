@@ -34,7 +34,7 @@ export function CTAEmergencia() {
           </h2>
           
           <p className="text-gray-200 text-base sm:text-lg max-w-2xl leading-relaxed">
-            No esperes más. Llámanos por teléfono o escríbenos directamente por WhatsApp. Despachamos un cerrajero a tu comuna en menos de 5 minutos.
+            No esperes más. Llámanos por teléfono o escríbenos directamente por WhatsApp. Coordinamos de inmediato el despacho de un cerrajero a tu comuna.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-4">
@@ -62,7 +62,7 @@ export function CTAEmergencia() {
           </div>
 
           <p className="text-xs text-gray-300 font-semibold tracking-wide uppercase mt-4">
-            Llegada promedio: 20 minutos • Presupuesto transparente sin compromiso
+            Llegada: de acuerdo a coordinación • Presupuesto transparente sin compromiso
           </p>
 
         </div>

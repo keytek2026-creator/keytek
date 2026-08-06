@@ -23,12 +23,12 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Keytek | Cerrajería de Urgencia en Santiago — Respuesta Rápida",
-  description: "Servicio de cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago. Llegamos en 20 minutos. Presupuestos transparentes.",
+  description: "Servicio de cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago. Llegada según coordinación. Presupuestos transparentes.",
   keywords: ["cerrajero santiago", "cerrajero urgente", "cerrajeria de urgencia", "apertura de puertas", "cerrajero cajeros", "cambio de cerradura", "cerrajería keytek"],
   metadataBase: new URL("https://www.keytek.cl"),
   openGraph: {
     title: "Keytek | Cerrajería de Urgencia en Santiago",
-    description: "Cerrajeros de confianza con atención express. Llegada en 20 minutos.",
+    description: "Cerrajeros de confianza con atención express. Llegada de acuerdo a coordinación.",
     type: "website",
     locale: "es_CL",
     siteName: "Keytek Cerrajería",
