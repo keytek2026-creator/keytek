@@ -14,8 +14,8 @@ export default function ZonasPage() {
       <section className="bg-gradient-to-b from-[#0F2A4A] to-[#1B5FA8] py-16 text-white text-center">
         <div className="container mx-auto px-4 md:px-6">
           <h1 className="font-heading text-4xl font-bold mb-4">Zonas de Cobertura</h1>
-          <p className="text-gray-200 text-lg max-w-2xl mx-auto">
-            Atención express de cerrajería de urgencia en terreno a lo largo de la Región Metropolitana.
+          <p className="text-gray-200 text-lg max-w-3xl mx-auto">
+            Atención express de cerrajería residencial y comercial en la Región Metropolitana, y cerrajería de cajeros automáticos en todo Chile.
           </p>
         </div>
       </section>
@@ -73,7 +73,7 @@ export default function ZonasPage() {
                 <MapPin className="h-5 w-5 text-keytek-blue shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold block mb-0.5">¿No encuentras tu comuna en la lista?</span>
-                  No te preocupes. Escríbenos por WhatsApp o llámanos para evaluar el traslado inmediato a tu ubicación. Resolvemos solicitudes especiales de cobertura de forma diaria.
+                  No te preocupes. Escríbenos por WhatsApp o llámanos para evaluar el traslado inmediato a tu ubicación. <strong>Nota: Nuestro servicio de cerrajería de cajeros automáticos (ATM) tiene cobertura nacional a lo largo de todo Chile.</strong>
                 </div>
               </div>
             </div>

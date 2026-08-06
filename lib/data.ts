@@ -34,16 +34,17 @@ export const SERVICES: Service[] = [
   {
     slug: "cerrajeria-cajeros-automaticos",
     title: "Cerrajería de Cajeros Automáticos",
-    shortDescription: "Apertura técnica, cambio de combinación y soporte de seguridad para cajeros automáticos (ATM).",
-    description: "Servicio altamente especializado y confidencial para la apertura técnica, reprogramación de claves digitales y mantención de cerraduras de alta seguridad de cajeros automáticos.",
+    shortDescription: "Soporte de seguridad, apertura técnica y cambio de combinación para cajeros automáticos (ATM) en todo Chile.",
+    description: "Servicio altamente especializado y confidencial para la apertura técnica, reprogramación de claves digitales y mantención de cerraduras de alta seguridad de cajeros automáticos a nivel nacional (todo Chile).",
     iconName: "CreditCard",
     features: [
+      "Cobertura a nivel nacional en todo Chile",
       "Apertura técnica no destructiva de bóvedas de ATM",
       "Reprogramación y cambio de cerraduras digitales (Cencon, Kaba, La Gard)",
-      "Atención de urgencias express para bancos y empresas de valores",
+      "Atención de urgencias para bancos y transporte de valores",
       "Cumplimiento riguroso de protocolos de confidencialidad"
     ],
-    detailedContent: "La cerrajería de cajeros automáticos requiere una alta especialización y equipamiento de precisión. Ofrecemos asistencia técnica autorizada para la apertura de bóvedas de cajeros automáticos (ATMs) de diversas marcas y modelos. Realizamos configuración de cerraduras de retardo electrónico, auditorías de accesos de usuario, cambio de combinaciones electrónicas bajo protocolo bancario y reparación de daños post-vandalismo.",
+    detailedContent: "La cerrajería de cajeros automáticos requiere una alta especialización y equipamiento de precisión. Ofrecemos asistencia técnica autorizada para la apertura de bóvedas de cajeros automáticos (ATMs) de diversas marcas y modelos con cobertura nacional en todo Chile. Realizamos configuración de cerraduras de retardo electrónico, auditorías de accesos de usuario, cambio de combinaciones electrónicas bajo protocolo bancario y reparación de daños post-vandalismo.",
     emergencia: true
   },
   {

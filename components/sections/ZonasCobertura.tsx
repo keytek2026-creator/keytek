@@ -37,11 +37,15 @@ export function ZonasCobertura() {
               <ul className="flex flex-col gap-4 text-sm text-gray-200">
                 <li className="flex items-center gap-3">
                   <ShieldCheck className="h-5 w-5 text-[#4FA8E0] shrink-0" />
-                  <span>Cobertura en comunas residenciales y comerciales</span>
+                  <span>Cerrajería residencial/comercial en Santiago</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <ShieldCheck className="h-5 w-5 text-[#4FA8E0] shrink-0" />
                   <span>Llegada de acuerdo a coordinación previa</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <ShieldCheck className="h-5 w-5 text-[#4FA8E0] shrink-0" />
+                  <span className="font-semibold text-[#9CE0FF]">Cajeros automáticos: Cobertura nacional en todo Chile</span>
                 </li>
               </ul>
             </div>
@@ -84,7 +88,7 @@ export function ZonasCobertura() {
             <div className="mt-8 pt-6 border-t border-gray-50 flex flex-col sm:flex-row items-center justify-between gap-4 bg-blue-50/50 p-4 rounded-2xl">
               <div className="text-xs md:text-sm text-keytek-navy">
                 <span className="font-bold block mb-0.5">¿No ves tu comuna en la lista?</span>
-                Contáctanos igual. Evaluamos traslados según disponibilidad inmediata de técnicos.
+                Contáctanos igual. Para residencial/comercial atendemos Santiago. <strong>Para cajeros automáticos (ATM), atendemos en todo Chile.</strong>
               </div>
               <a
                 href={`https://wa.me/${phoneRaw}?text=${encodeURIComponent("Hola, quería consultar si tienen cobertura en mi sector...")}`}

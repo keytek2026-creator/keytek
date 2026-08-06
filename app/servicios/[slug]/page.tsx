@@ -22,9 +22,13 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
   const service = SERVICES.find((s) => s.slug === params.slug)
   if (!service) return {}
 
+  const isAtm = params.slug === "cerrajeria-cajeros-automaticos"
+
   return {
-    title: `${service.title} de Urgencia en Santiago | Keytek`,
-    description: `${service.shortDescription} Servicio rápido, garantizado y profesional a domicilio. Técnicos certificados en terreno.`,
+    title: isAtm
+      ? `${service.title} de Urgencia en todo Chile | Keytek`
+      : `${service.title} de Urgencia en Santiago | Keytek`,
+    description: `${service.shortDescription} Servicio rápido, garantizado y profesional. Técnicos certificados en terreno.`,
   }
 }
 
