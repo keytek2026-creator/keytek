@@ -73,10 +73,9 @@ export default function ContactoPage() {
                 </div>
               </div>
 
-              {/* Embedded Google Map (with rounded corners) */}
               <div className="w-full h-[280px] rounded-3xl overflow-hidden shadow-sm border border-gray-150 bg-gray-50 relative flex-grow min-h-[250px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d106511.90647167664!2d-70.6692655!3d-33.4488897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a714813737%3A0xe21d8f7823f1090c!2sSantiago%2C%20Santiago%20Province%2C%20Santiago%20Metropolitan Region%2C%20Chile!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d106511.90647167664!2d-70.6692655!3d-33.4488897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a714813737%3A0xe21d8f7823f1090c!2sSantiago%2C%20Chile!5e0!3m2!1ses!2scl!4v1722880000000!5m2!1ses!2scl"
                   className="absolute inset-0 w-full h-full border-none"
                   allowFullScreen
                   loading="lazy"
