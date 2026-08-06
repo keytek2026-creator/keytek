@@ -87,7 +87,7 @@ export function Navbar() {
           >
             <span className="absolute -inset-1 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></span>
             <Shield className="h-4 w-4 fill-current text-white animate-pulse" />
-            <span>Urgencias 24/7</span>
+            <span>Urgencias Express</span>
           </Link>
         </div>
 
@@ -133,7 +133,7 @@ export function Navbar() {
               className="flex items-center justify-center gap-3 w-full rounded-xl bg-red-600 py-3.5 text-base font-semibold text-white shadow-xl shadow-red-500/10 hover:bg-red-700 transition-all"
             >
               <Shield className="h-5 w-5 fill-current" />
-              <span>Servicio de Emergencia 24/7</span>
+              <span>Servicio de Emergencia</span>
             </Link>
           </div>
         </div>

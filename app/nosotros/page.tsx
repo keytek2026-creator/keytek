@@ -133,7 +133,7 @@ export default function NosotrosPage() {
       <section className="bg-gradient-to-r from-[#0F2A4A] to-[#1B5FA8] py-12 text-white text-center">
         <div className="container mx-auto px-4 max-w-3xl">
           <h3 className="font-heading text-2xl font-bold mb-4">¿Tienes alguna duda o necesitas cotizar?</h3>
-          <p className="text-gray-300 text-sm mb-6">Estamos a tu disposición las 24 horas del día. Llámanos o escríbenos directamente.</p>
+          <p className="text-gray-300 text-sm mb-6">Estamos a tu disposición. Llámanos o escríbenos directamente.</p>
           <a
             href={`tel:${phoneRaw}`}
             className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-6 py-3 text-sm font-bold text-white shadow-xl shadow-red-500/25 hover:scale-105 transition-transform"

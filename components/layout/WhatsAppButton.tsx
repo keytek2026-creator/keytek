@@ -27,7 +27,7 @@ export function WhatsAppButton() {
       {showTooltip && (
         <div className="animate-in fade-in slide-in-from-bottom-2 duration-300 relative flex max-w-xs items-center gap-2 rounded-xl bg-white p-3 shadow-2xl border border-gray-100 ring-1 ring-black/5">
           <div className="text-xs md:text-sm font-medium text-keytek-text pr-4">
-            <span className="font-semibold text-keytek-success block">¿Urgencia 24/7?</span>
+            <span className="font-semibold text-keytek-success block">¿Necesitas ayuda?</span>
             Escríbenos ahora por WhatsApp para una respuesta inmediata.
           </div>
           <button

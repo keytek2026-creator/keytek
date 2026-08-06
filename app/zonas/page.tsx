@@ -35,7 +35,7 @@ export default function ZonasPage() {
                 <div>
                   <h3 className="font-heading text-base font-bold text-keytek-text mb-1">Tiempos de Llegada</h3>
                   <p className="text-keytek-text-muted text-xs md:text-sm leading-relaxed">
-                    Nuestras unidades móviles patrullan comunas clave las 24 horas para garantizar una llegada entre 15 a 30 minutos desde tu llamada.
+                    Nuestras unidades móviles patrullan comunas clave de forma constante para garantizar una llegada entre 15 a 30 minutos desde tu llamada.
                   </p>
                 </div>
               </div>

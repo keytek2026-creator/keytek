@@ -22,13 +22,13 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Keytek | Cerrajería 24/7 en Santiago — Respuesta Rápida",
-  description: "Servicio de cerrajería de cajeros automáticos, residencial y comercial de urgencia 24/7 en Santiago. Llegamos en 20 minutos. Presupuestos transparentes.",
-  keywords: ["cerrajero santiago", "cerrajero 24/7", "cerrajeria de urgencia", "apertura de puertas", "cerrajero cajeros", "cambio de cerradura", "cerrajería keytek"],
+  title: "Keytek | Cerrajería de Urgencia en Santiago — Respuesta Rápida",
+  description: "Servicio de cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago. Llegamos en 20 minutos. Presupuestos transparentes.",
+  keywords: ["cerrajero santiago", "cerrajero urgente", "cerrajeria de urgencia", "apertura de puertas", "cerrajero cajeros", "cambio de cerradura", "cerrajería keytek"],
   metadataBase: new URL("https://www.keytek.cl"),
   openGraph: {
-    title: "Keytek | Cerrajería 24/7 en Santiago",
-    description: "Cerrajeros de confianza disponibles las 24 horas del día. Llegada express en 20 minutos.",
+    title: "Keytek | Cerrajería de Urgencia en Santiago",
+    description: "Cerrajeros de confianza con atención express. Llegada en 20 minutos.",
     type: "website",
     locale: "es_CL",
     siteName: "Keytek Cerrajería",
@@ -44,9 +44,9 @@ export default function RootLayout({
   const schemaJsonLd = {
     "@context": "https://schema.org",
     "@type": "Locksmith",
-    "name": "Keytek Cerrajería 24/7",
+    "name": "Keytek Cerrajería de Urgencia",
     "image": "https://www.keytek.cl/images/og-image.jpg",
-    "description": "Cerrajería de cajeros automáticos, residencial y comercial de urgencia 24/7 en Santiago de Chile. Apertura de puertas, duplicado de llaves, cerraduras inteligentes y cambio de cilindros.",
+    "description": "Cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago de Chile. Apertura de puertas, duplicado de llaves, cerraduras inteligentes y cambio de cilindros.",
     "telephone": CONTACT_INFO.phone,
     "email": CONTACT_INFO.email,
     "address": {

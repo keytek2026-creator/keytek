@@ -3,8 +3,8 @@ import { CONTACT_INFO, COMUNAS } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Cerrajero Urgente 24/7 Santiago | Keytek Emergencias",
-  description: "Servicio de cerrajería express las 24 horas del día. Llegamos a tu comuna en 20 minutos. Aperturas limpias y cambio de cerraduras de urgencia.",
+  title: "Cerrajero de Urgencia en Santiago | Keytek Emergencias",
+  description: "Servicio de cerrajería express a domicilio. Llegamos a tu comuna en 20 minutos. Aperturas limpias y cambio de cerraduras de urgencia.",
 }
 
 export default function EmergenciasPage() {
@@ -36,7 +36,7 @@ export default function EmergenciasPage() {
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-            Cerrajero de Urgencia <span className="text-red-500">24 Horas</span>
+            Cerrajero de Urgencia <span className="text-red-500">Express</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-250 mb-12 max-w-2xl leading-relaxed">

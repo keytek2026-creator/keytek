@@ -26,7 +26,7 @@ export function CTAEmergencia() {
           {/* Pulsing indicator */}
           <div className="inline-flex items-center gap-2 rounded-full bg-red-500/15 border border-red-500/30 px-4 py-1 text-xs font-semibold text-red-300 uppercase tracking-wider animate-pulse">
             <Clock className="h-3.5 w-3.5" />
-            <span>Servicio Técnico 24/7 Disponible</span>
+            <span>Servicio Técnico Disponible</span>
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight">

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
   if (!service) return {}
 
   return {
-    title: `${service.title} 24/7 en Santiago | Keytek`,
+    title: `${service.title} de Urgencia en Santiago | Keytek`,
     description: `${service.shortDescription} Servicio rápido, garantizado y profesional a domicilio. Técnicos certificados en terreno.`,
   }
 }

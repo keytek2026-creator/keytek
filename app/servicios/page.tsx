@@ -85,7 +85,7 @@ export default function ServiciosPage() {
                     <div className="mt-6 rounded-xl bg-red-50 p-4 border border-red-100 text-xs text-red-800 flex items-start gap-2.5">
                       <Icons.AlertCircle className="h-5 w-5 text-red-600 shrink-0 mt-0.5 animate-pulse" />
                       <div>
-                        <span className="font-bold block mb-0.5">Servicio Disponible de Urgencia 24/7</span>
+                        <span className="font-bold block mb-0.5">Servicio Disponible de Urgencia</span>
                         Llegamos a tu ubicación de forma inmediata. Haz click en el botón de WhatsApp o llama directamente.
                       </div>
                     </div>

@@ -8,7 +8,7 @@ export const SERVICES: Service[] = [
     description: "Si perdiste tus llaves o se quedaron adentro, abrimos tu puerta sin causar daños estructurales. Contamos con herramientas de última generación y cerrajeros expertos en todo tipo de cerraduras, rejas y puertas blindadas.",
     iconName: "LockOpen",
     features: [
-      "Servicio de urgencia 24/7",
+      "Servicio de urgencia express",
       "Apertura no destructiva garantizada",
       "Llegada en 20 minutos promedio",
       "Atención en casas, departamentos y comercios"
@@ -40,7 +40,7 @@ export const SERVICES: Service[] = [
     features: [
       "Apertura técnica no destructiva de bóvedas de ATM",
       "Reprogramación y cambio de cerraduras digitales (Cencon, Kaba, La Gard)",
-      "Atención de urgencias 24/7 para bancos y empresas de valores",
+      "Atención de urgencias express para bancos y empresas de valores",
       "Cumplimiento riguroso de protocolos de confidencialidad"
     ],
     detailedContent: "La cerrajería de cajeros automáticos requiere una alta especialización y equipamiento de precisión. Ofrecemos asistencia técnica autorizada para la apertura de bóvedas de cajeros automáticos (ATMs) de diversas marcas y modelos. Realizamos configuración de cerraduras de retardo electrónico, auditorías de accesos de usuario, cambio de combinaciones electrónicas bajo protocolo bancario y reparación de daños post-vandalismo.",
@@ -151,5 +151,5 @@ export const CONTACT_INFO = {
   phoneRaw: "56912345678",
   whatsappText: "Hola, necesito un cerrajero urgente.",
   email: "contacto@keytek.cl",
-  schedule: "Atención 24 Horas / 7 Días a la Semana"
+  schedule: "Atención de Lunes a Domingo"
 }

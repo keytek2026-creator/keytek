@@ -46,7 +46,7 @@ export function Hero() {
           {/* Emergency Tag */}
           <div className="inline-flex items-center gap-2 rounded-full bg-red-500/15 border border-red-500/30 px-4 py-1.5 text-xs font-semibold text-red-300 mb-6 uppercase tracking-wider animate-pulse">
             <span className="flex h-2 w-2 rounded-full bg-red-500"></span>
-            Servicio de Cerrajería de Emergencia 24/7
+            Servicio de Cerrajería de Emergencia
           </div>
 
           {/* Main Headline */}
@@ -118,7 +118,7 @@ export function Hero() {
                 <Key className="h-6 w-6" />
               </div>
               <span className="text-xs font-semibold tracking-wider text-gray-300 uppercase">Horario</span>
-              <span className="text-sm font-bold">Servicio 24 Horas</span>
+              <span className="text-sm font-bold">Servicio Continuo</span>
             </div>
           </div>
 

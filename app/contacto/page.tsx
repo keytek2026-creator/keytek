@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
   title: "Contacto | Keytek Cerrajería",
-  description: "Ponte en contacto con Keytek. Teléfono de urgencias 24/7, correo electrónico y formulario de cotizaciones para cerrajería en Santiago.",
+  description: "Ponte en contacto con Keytek. Teléfono de urgencias rápido, correo electrónico y formulario de cotizaciones para cerrajería en Santiago.",
 }
 
 export default function ContactoPage() {
