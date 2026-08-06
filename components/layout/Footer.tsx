@@ -18,7 +18,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Logo light className="mb-2" />
             <p className="text-sm text-gray-300 leading-relaxed">
-              Cerrajería profesional y tecnológica para hogares, oficinas y comercios en Santiago. Disponibilidad ante emergencias con técnicos calificados.
+              Cerrajería profesional para hogares y comercios en Santiago, y cerrajería de cajeros automáticos (ATM) con cobertura nacional en todo Chile.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm text-[#4FA8E0] font-semibold">
               <Clock className="h-4 w-4 shrink-0" />

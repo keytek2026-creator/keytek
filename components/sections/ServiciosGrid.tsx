@@ -29,8 +29,22 @@ export function ServiciosGrid() {
           {SERVICES.map((service) => (
             <Card
               key={service.slug}
-              className="group relative flex flex-col justify-between overflow-hidden border border-gray-150 hover:shadow-xl hover:border-keytek-blue/30 transition-all duration-300 rounded-2xl"
+              className={`group relative flex flex-col justify-between overflow-hidden border transition-all duration-300 rounded-2xl hover:shadow-xl ${
+                service.slug === "cerrajeria-cajeros-automaticos"
+                  ? "border-[#4FA8E0]/40 shadow-md shadow-[#4FA8E0]/5 bg-gradient-to-b from-white to-[#4FA8E0]/5"
+                  : "border-gray-150 hover:border-keytek-blue/30"
+              }`}
             >
+              {/* Nationwide floating tag for ATMs */}
+              {service.slug === "cerrajeria-cajeros-automaticos" && (
+                <div className="absolute top-3 right-3 z-10">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#1B5FA8] to-[#4FA8E0] px-3.5 py-1 text-[10px] font-black tracking-wider text-white uppercase shadow-md animate-pulse">
+                    <Icons.Globe className="h-3.5 w-3.5 shrink-0" />
+                    Todo Chile
+                  </span>
+                </div>
+              )}
+
               {/* Top Accent circuit glow */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-keytek-blue to-keytek-blue-light scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
 

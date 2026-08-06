@@ -56,8 +56,8 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
-            ¿Perdiste tus llaves, olvidaste tu clave o necesitas un cambio de cerradura? Atendemos emergencias residenciales, comerciales e industriales en todo Santiago.
+          <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-3xl leading-relaxed">
+            ¿Perdiste tus llaves, olvidaste tu clave o necesitas un cambio de cerradura? Atendemos emergencias residenciales y comerciales en todo Santiago, y cerrajería de cajeros automáticos (ATM) en todo Chile.
           </p>
 
           {/* Double Call-to-Action Buttons */}
