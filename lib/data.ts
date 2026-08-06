@@ -123,8 +123,8 @@ export const REVIEWS: Review[] = [
     id: "4",
     name: "Roberto Rojas",
     rating: 5,
-    text: "Perdí la llave de mi camioneta. Vinieron hasta mi casa en La Reina, abrieron el vehículo de manera limpia y me hicieron una copia de la llave codificada en su taller móvil. Un ahorro de tiempo increíble.",
-    comuna: "La Reina",
+    text: "Solicitamos el servicio de urgencia para el cambio de combinación electrónica de la bóveda de nuestro cajero automático. Excelente protocolo de confidencialidad, rapidez y precisión técnica.",
+    comuna: "Santiago",
     date: "Hace 2 meses"
   }
 ]
