@@ -55,11 +55,11 @@ export default function NosotrosPage() {
               </h3>
               
               <p className="text-keytek-text-muted text-sm leading-relaxed">
-                Sabemos que la seguridad de tu hogar, oficina o vehículo no puede quedar en manos de cualquiera. Por eso, en **Keytek** implementamos un estricto proceso de reclutamiento y verificación de antecedentes de todo nuestro personal técnico.
+                Sabemos que la seguridad de tu hogar, oficina o comercio no puede quedar en manos de cualquiera. Por eso, en **Keytek** implementamos un estricto proceso de reclutamiento y verificación de antecedentes de todo nuestro personal técnico.
               </p>
 
               <p className="text-keytek-text-muted text-sm leading-relaxed">
-                Nuestros cerrajeros están equipados con vehículos de respuesta rápida que funcionan como talleres móviles. Cuentan con escáneres vehiculares avanzados, computadoras de corte de llaves para reproducir copias exactas en el acto, y ganzúas de alta tecnología adaptadas a cerraduras multipunto modernas.
+                Nuestros cerrajeros están equipados con unidades de respuesta rápida que funcionan como talleres móviles. Cuentan con computadoras de corte de llaves para reproducir copias exactas en el acto, y ganzúas de alta tecnología adaptadas a cerraduras multipunto modernas.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-2">

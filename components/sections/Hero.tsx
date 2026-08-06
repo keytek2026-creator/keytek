@@ -56,7 +56,7 @@ export function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed">
-            ¿Perdiste tus llaves, olvidaste tu clave o necesitas un cambio de cerradura? Atendemos emergencias residenciales, automotrices y comerciales en todo Santiago.
+            ¿Perdiste tus llaves, olvidaste tu clave o necesitas un cambio de cerradura? Atendemos emergencias residenciales, comerciales e industriales en todo Santiago.
           </p>
 
           {/* Double Call-to-Action Buttons */}
