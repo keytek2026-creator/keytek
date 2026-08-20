@@ -23,8 +23,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Keytek | Cerrajería de Urgencia en Santiago — Respuesta Rápida",
-  description: "Servicio de cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago. Llegada según coordinación. Presupuestos transparentes.",
-  keywords: ["cerrajero santiago", "cerrajero urgente", "cerrajeria de urgencia", "apertura de puertas", "cerrajero cajeros", "cambio de cerradura", "cerrajería keytek"],
+  description: "Servicio de cerrajería de cajeros automáticos, residencial, comercial e instalación de cámaras de seguridad en Santiago y todo Chile. Presupuestos transparentes.",
+  keywords: ["cerrajero santiago", "cerrajero urgente", "cerrajeria de urgencia", "apertura de puertas", "cerrajero cajeros", "cambio de cerradura", "cerrajería keytek", "camaras de seguridad", "instalacion de camaras"],
   metadataBase: new URL("https://www.keytek.cl"),
   icons: {
     icon: "/favicon.png",
@@ -51,7 +51,7 @@ export default function RootLayout({
     "@type": "Locksmith",
     "name": "Keytek Cerrajería de Urgencia",
     "image": "https://www.keytek.cl/images/og-image.jpg",
-    "description": "Cerrajería de cajeros automáticos, residencial y comercial de urgencia en Santiago de Chile. Apertura de puertas, duplicado de llaves, cerraduras inteligentes y cambio de cilindros.",
+    "description": "Cerrajería de cajeros automáticos, residencial, comercial e instalación de cámaras de seguridad en Santiago de Chile. Apertura de puertas, cerraduras inteligentes y sistemas de cámaras.",
     "telephone": CONTACT_INFO.phone,
     "email": CONTACT_INFO.email,
     "address": {

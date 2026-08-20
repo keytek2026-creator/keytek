@@ -11,7 +11,7 @@ function ServiceIcon({ name, className }: { name: string; className?: string }) 
 
 export const metadata = {
   title: "Servicios de Cerrajería | Keytek",
-  description: "Apertura de puertas, cambio de cerraduras, cerrajería de cajeros automáticos, cajas fuertes, cerraduras inteligentes y cerrajería comercial en Santiago.",
+  description: "Apertura de puertas, cambio de cerraduras, cerrajería de cajeros automáticos, cajas fuertes, cerraduras inteligentes, cerrajería comercial e instalación de cámaras de seguridad.",
 }
 
 export default function ServiciosPage() {

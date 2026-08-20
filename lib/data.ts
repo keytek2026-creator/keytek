@@ -91,6 +91,21 @@ export const SERVICES: Service[] = [
     ],
     detailedContent: "Un negocio requiere normativas específicas de seguridad y flujo de personas. Instalamos cerraduras de alta resistencia para cortinas de comercio, sistemas de salida de emergencia (barras antipánico) homologados, y brazos hidráulicos para control de climatización y portazos. Ofrecemos además sistemas de llaves maestras que simplifican el control de accesos permitiendo a los administradores abrir múltiples oficinas con una sola llave jerarquizada.",
     emergencia: false
+  },
+  {
+    slug: "instalacion-camaras",
+    title: "Cámaras de Seguridad",
+    shortDescription: "Instalación y configuración de cámaras de vigilancia y sistemas de CCTV.",
+    description: "Protege tu hogar, condominio o negocio con videovigilancia de alta definición. Instalación y configuración de cámaras IP, WiFi y sistemas de grabación con monitoreo en tiempo real desde tu celular.",
+    iconName: "Camera",
+    features: [
+      "Instalación de cámaras IP, HD y WiFi",
+      "Configuración de visualización remota en el celular",
+      "Sistemas de visión nocturna y sensores de movimiento",
+      "Mantenimiento de sistemas de grabación (NVR / DVR)"
+    ],
+    detailedContent: "Un sistema de cámaras de seguridad es esencial para complementar la seguridad física de cualquier espacio. Nos encargamos del diseño, cableado e instalación de cámaras de seguridad de alta calidad para residencias y comercios. Configuramos la visualización en directo desde tu smartphone o tablet, alertas instantáneas ante movimientos sospechosos y almacenamiento seguro en disco duro o la nube. Trabajamos con marcas de prestigio mundial como Hikvision, Dahua y Ezviz, asegurando un trabajo prolijo, ordenado y con la mejor asesoría técnica.",
+    emergencia: false
   }
 ]
 
