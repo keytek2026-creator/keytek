@@ -30,12 +30,38 @@ import {
 import { Button } from "@/components/ui/button"
 
 const formSchema = z.object({
-  nombre: z.string().min(2, {
-    message: "El nombre debe tener al menos 2 caracteres.",
-  }),
-  telefono: z.string().min(8, {
-    message: "El teléfono debe tener al menos 8 dígitos.",
-  }),
+  nombre: z.string()
+    .min(2, { message: "El nombre debe tener al menos 2 caracteres." })
+    .refine(
+      (val) => {
+        const trimmed = val.trim();
+        const parts = trimmed.split(/\s+/);
+        return parts.length >= 2 && parts.every(part => part.length >= 2);
+      },
+      {
+        message: "Por favor, ingresa tu nombre y apellido (al menos dos palabras).",
+      }
+    )
+    .refine(
+      (val) => {
+        const regex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+        return regex.test(val);
+      },
+      {
+        message: "El nombre solo debe contener letras.",
+      }
+    ),
+  telefono: z.string()
+    .min(8, { message: "El teléfono debe tener al menos 8 dígitos." })
+    .refine(
+      (val) => {
+        const regex = /^\+?[0-9\s\-]+$/;
+        return regex.test(val);
+      },
+      {
+        message: "El teléfono solo debe contener números (puede iniciar con + y contener espacios o guiones).",
+      }
+    ),
   comuna: z.string().min(1, "Selecciona una comuna de la lista."),
   servicio: z.string().min(1, "Selecciona el servicio requerido."),
   mensaje: z.string().min(5, {
