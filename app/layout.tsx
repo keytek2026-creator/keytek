@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.keytek.cl"),
   icons: {
     icon: "/favicon.png",
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.ico",
     apple: "/favicon.png",
   },
   openGraph: {
