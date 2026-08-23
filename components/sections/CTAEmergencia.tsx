@@ -30,11 +30,11 @@ export function CTAEmergencia() {
           </div>
 
           <h2 className="font-heading text-3xl sm:text-4xl font-bold tracking-tight">
-            ¿Te quedaste fuera o necesitas cambiar cerraduras urgente?
+            ¿Problemas con la seguridad o bloqueo de un cajero automático (ATM)?
           </h2>
           
-          <p className="text-gray-200 text-base sm:text-lg max-w-2xl leading-relaxed text-center">
-            No esperes más. Escríbenos directamente por WhatsApp. Coordinamos de inmediato el despacho de un cerrajero a tu comuna.
+          <p className="text-gray-200 text-base sm:text-lg max-w-3xl leading-relaxed text-center">
+            Soporte urgente 24/7 en todo Chile. Escríbanos directamente por WhatsApp para coordinar la asistencia de un técnico certificado de inmediato.
           </p>
 
           <div className="w-full max-w-md flex justify-center mt-6">
@@ -46,7 +46,7 @@ export function CTAEmergencia() {
               className="w-full flex items-center justify-center gap-3 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] px-8 py-5 text-xl font-extrabold text-white shadow-2xl shadow-[#25D366]/35 hover:scale-105 active:scale-95 transition-transform"
             >
               <MessageSquare className="h-6 w-6 fill-current shrink-0 animate-pulse" />
-              <span>WHATSAPP URGENTE</span>
+              <span>WHATSAPP SOPORTE ATM</span>
             </a>
           </div>
 

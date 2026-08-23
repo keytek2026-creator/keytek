@@ -85,18 +85,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Action CTAs */}
-        <div className="hidden sm:flex items-center gap-4">
-          
-          <Link
-            href="/emergencias"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-red-600 to-red-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-red-500/20 hover:scale-105 transition-all duration-200"
-          >
-            <span className="absolute -inset-1 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></span>
-            <Shield className="h-4 w-4 fill-current text-white animate-pulse" />
-            <span>Urgencias Express</span>
-          </Link>
-        </div>
+        {/* Action CTAs removed */}
 
         {/* Mobile menu trigger button */}
         <button
