@@ -1,26 +1,26 @@
-import { Clock, ShieldCheck, Wrench, CircleDollarSign } from "lucide-react"
+import { Globe, ShieldCheck, Wrench, Lock } from "lucide-react"
 
 export function PorQueElegirnos() {
   const features = [
     {
-      icon: Clock,
-      title: "Llegada según Coordinación",
-      description: "Coordinamos contigo de manera directa. Tenemos unidades móviles distribuidas estratégicamente por todo Santiago para acudir a tu ubicación a la brevedad."
+      icon: Globe,
+      title: "Cobertura Nacional",
+      description: "Ofrecemos servicios especializados de cerrajería y aperturas técnicas para cajeros automáticos (ATM) de Arica a Punta Arenas."
     },
     {
       icon: ShieldCheck,
       title: "Técnicos Certificados",
-      description: "Nuestros cerrajeros están altamente capacitados en cerrajería clásica y digital, además de contar con antecedentes intachables verificados."
+      description: "Nuestro equipo está altamente capacitado en sistemas de bloqueo de alta seguridad (Cencon, Kaba Mas, La Gard) y cuenta con antecedentes intachables."
     },
     {
       icon: Wrench,
-      title: "Métodos No Destructivos",
-      description: "Utilizamos herramientas tecnológicas de ganzuado profesional para abrir tus puertas o accesos sin rayar marcos ni dañar cerraduras."
+      title: "Técnicas No Destructivas",
+      description: "Utilizamos herramientas de alta precisión para abrir bóvedas de cajeros sin dañar la estructura ni comprometer la seguridad física."
     },
     {
-      icon: CircleDollarSign,
-      title: "Precios Transparentes",
-      description: "Sin sorpresas. Te entregamos un presupuesto estimado y transparente antes de salir al terreno. El precio acordado es el precio que pagas."
+      icon: Lock,
+      title: "Confidencialidad Absoluta",
+      description: "Operamos bajo rigurosos protocolos de seguridad y reserva, resguardando la integridad física y la información de accesos bancarios."
     }
   ]
 
@@ -34,7 +34,7 @@ export function PorQueElegirnos() {
             ¿Por qué elegir a Keytek?
           </h2>
           <p className="text-keytek-text-muted text-lg">
-            Combinamos la rapidez de la cerrajería de urgencia tradicional con la precisión y el equipamiento de la cerrajería digital moderna.
+            Especialistas en cerrajería bancaria de precisión, ofreciendo soporte técnico de alta seguridad bajo rigurosos estándares y protocolos de confidencialidad.
           </p>
         </div>
 

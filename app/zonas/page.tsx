@@ -1,11 +1,27 @@
 import { MapPin, Clock, Navigation, CheckCircle2 } from "lucide-react"
-import { COMUNAS } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Cobertura de Cerrajería en Santiago | Keytek",
-  description: "Revisa las comunas donde atendemos con servicio rápido de cerrajería. Llegada de acuerdo a coordinación en Providencia, Las Condes, Vitacura y más.",
+  title: "Cobertura Nacional de Cerrajería ATM | Keytek",
+  description: "Soporte técnico y apertura de cajeros automáticos (ATM) en todo Chile. Cobertura en todas las regiones de Arica a Punta Arenas.",
 }
+
+const REGIONES_COBERTURA = [
+  "Arica e Iquique",
+  "Antofagasta y Calama",
+  "Copiapó y Coquimbo",
+  "La Serena y Ovalle",
+  "Valparaíso y Viña del Mar",
+  "Región Metropolitana",
+  "Rancagua y San Fernando",
+  "Talca y Curicó",
+  "Chillán y Concepción",
+  "Temuco y Angol",
+  "Valdivia y Osorno",
+  "Puerto Montt y Chiloé",
+  "Coyhaique y Aysén",
+  "Punta Arenas"
+]
 
 export default function ZonasPage() {
   return (
@@ -13,9 +29,9 @@ export default function ZonasPage() {
       {/* Header Banner */}
       <section className="bg-gradient-to-b from-[#0F2A4A] to-[#1B5FA8] py-16 text-white text-center">
         <div className="container mx-auto px-4 md:px-6">
-          <h1 className="font-heading text-4xl font-bold mb-4">Zonas de Cobertura</h1>
+          <h1 className="font-heading text-4xl font-bold mb-4">Cobertura Nacional</h1>
           <p className="text-gray-200 text-lg max-w-3xl mx-auto">
-            Atención express de cerrajería residencial y comercial en la Región Metropolitana, y cerrajería de cajeros automáticos en todo Chile.
+            Servicio técnico especializado y aperturas de cajeros automáticos (ATM) en todas las comunas y regiones de Chile.
           </p>
         </div>
       </section>
@@ -33,9 +49,9 @@ export default function ZonasPage() {
                   <Clock className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-heading text-base font-bold text-keytek-text mb-1">Tiempos de Llegada</h3>
+                  <h3 className="font-heading text-base font-bold text-keytek-text mb-1">Tiempos de Respuesta</h3>
                   <p className="text-keytek-text-muted text-xs md:text-sm leading-relaxed">
-                    Nuestras unidades móviles patrullan comunas clave de forma constante para garantizar una llegada de acuerdo a coordinación desde tu llamada.
+                    Coordinamos de manera directa y centralizada con sus equipos de seguridad o empresas de valores para resolver incidentes operativos a la brevedad.
                   </p>
                 </div>
               </div>
@@ -45,26 +61,26 @@ export default function ZonasPage() {
                   <Navigation className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-heading text-base font-bold text-keytek-text mb-1">Talleres Móviles</h3>
+                  <h3 className="font-heading text-base font-bold text-keytek-text mb-1">Logística de Traslado</h3>
                   <p className="text-keytek-text-muted text-xs md:text-sm leading-relaxed">
-                    Vehículos equipados con herramientas para ganzuado, copiado de llaves con chip y reparación de cilindros en el acto.
+                    Disponemos de la movilidad y acreditaciones necesarias para acudir a sucursales bancarias, malls, supermercados y zonas de difícil acceso de norte a sur.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Comunas grid display */}
+            {/* Regions grid display */}
             <div className="lg:col-span-2 bg-white p-8 rounded-3xl border border-gray-150 shadow-sm">
-              <h2 className="font-heading text-2xl font-bold text-keytek-text mb-2">Comunas con Atención Prioritaria</h2>
+              <h2 className="font-heading text-2xl font-bold text-keytek-text mb-2">Principales Zonas de Cobertura</h2>
               <p className="text-keytek-text-muted text-sm mb-6 leading-relaxed">
-                Atendemos de forma regular las siguientes zonas residenciales y comerciales de Santiago:
+                Atendemos de forma regular cajeros automáticos (ATM) en los principales centros urbanos y logísticos del país:
               </p>
               
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {COMUNAS.map((comuna) => (
-                  <div key={comuna} className="flex items-center gap-2.5 text-sm text-keytek-text">
+                {REGIONES_COBERTURA.map((region) => (
+                  <div key={region} className="flex items-center gap-2.5 text-sm text-keytek-text">
                     <CheckCircle2 className="h-4.5 w-4.5 text-keytek-success shrink-0" />
-                    <span>{comuna}</span>
+                    <span>{region}</span>
                   </div>
                 ))}
               </div>
@@ -72,8 +88,8 @@ export default function ZonasPage() {
               <div className="mt-8 p-4 bg-blue-50/50 rounded-2xl border border-blue-100/50 text-xs text-keytek-navy leading-relaxed flex items-start gap-2.5">
                 <MapPin className="h-5 w-5 text-keytek-blue shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-bold block mb-0.5">¿No encuentras tu comuna en la lista?</span>
-                  No te preocupes. Escríbenos por WhatsApp o llámanos para evaluar el traslado inmediato a tu ubicación. <strong>Nota: Nuestro servicio de cerrajería de cajeros automáticos (ATM) tiene cobertura nacional a lo largo de todo Chile.</strong>
+                  <span className="font-bold block mb-0.5">¿Soporte técnico en zonas extremas?</span>
+                  Contáctenos de forma directa. Diseñamos planes de soporte especiales y rutas de traslado para sucursales bancarias y ATMs en áreas remotas o complejas de todo Chile.
                 </div>
               </div>
             </div>
@@ -82,8 +98,8 @@ export default function ZonasPage() {
 
           {/* Form wrapper */}
           <ContactForm
-            title="Consulte por Cobertura o Solicite Asistencia"
-            subtitle="Si tienes dudas sobre el costo de traslado a tu ubicación o el tiempo de espera estimado, completa los datos a continuación."
+            title="Consulte Cobertura Bancaria"
+            subtitle="Si tiene dudas sobre los plazos de cobertura técnica para sus cajeros automáticos en regiones, complete el formulario a continuación."
           />
 
         </div>

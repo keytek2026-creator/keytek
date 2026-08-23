@@ -47,17 +47,17 @@ export function Hero() {
           {/* Emergency Tag */}
           <div className="inline-flex items-center gap-2 rounded-full bg-red-500/15 border border-red-500/30 px-4 py-1.5 text-xs font-semibold text-red-300 mb-6 uppercase tracking-wider animate-pulse">
             <span className="flex h-2 w-2 rounded-full bg-red-500"></span>
-            Servicio de Cerrajería de Emergencia
+            Cerrajería y Seguridad Bancaria ATM
           </div>
 
           {/* Main Headline */}
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight mb-6 max-w-3xl">
-            Cerrajeros de Confianza con Respuesta <span className="text-[#4FA8E0]">según Coordinación</span>
+            Cerrajería de Alta Seguridad para <span className="text-[#4FA8E0]">Cajeros Automáticos (ATM)</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-gray-200 mb-10 max-w-3xl leading-relaxed">
-            ¿Perdiste tus llaves, olvidaste tu clave o necesitas un cambio de cerradura? Atendemos emergencias residenciales y comerciales en todo Santiago, y cerrajería de cajeros automáticos (ATM) en todo Chile.
+            Apertura técnica no destructiva, cambio de combinación y soporte técnico especializado para entidades bancarias y transporte de valores a nivel nacional en todo Chile.
           </p>
 
           {/* Double Call-to-Action Buttons */}
@@ -65,10 +65,10 @@ export function Hero() {
             
             {/* Secondary Services Button */}
             <Link
-              href="/servicios"
+              href="#servicios"
               className="flex items-center justify-center gap-3 w-full sm:w-auto rounded-xl border border-white/20 bg-white/10 hover:bg-white/20 px-8 py-4 text-lg font-bold text-white backdrop-blur-sm transition-all duration-200 hover:scale-105"
             >
-              <span>Ver Servicios</span>
+              <span>Nuestros Servicios</span>
             </Link>
 
             {/* Secondary WhatsApp Button */}

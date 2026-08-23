@@ -22,7 +22,7 @@ export default function ServiciosPage() {
         <div className="container mx-auto px-4 md:px-6">
           <h1 className="font-heading text-4xl font-bold mb-4">Nuestros Servicios</h1>
           <p className="text-gray-200 text-lg max-w-2xl mx-auto">
-            Soluciones rápidas, garantizadas y con tecnología avanzada para cualquier inconveniente de cerrajería en Santiago.
+            Soporte técnico de alta seguridad, aperturas técnicas y reprogramación de cerraduras digitales de cajeros automáticos (ATM) en todo Chile.
           </p>
         </div>
       </section>

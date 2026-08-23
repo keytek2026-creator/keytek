@@ -1,20 +1,36 @@
 import { Phone, Clock, ShieldAlert, Award, ShieldCheck, CheckCircle } from "lucide-react"
-import { CONTACT_INFO, COMUNAS } from "@/lib/data"
+import { CONTACT_INFO } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Cerrajero de Urgencia en Santiago | Keytek Emergencias",
-  description: "Servicio de cerrajería express a domicilio. Llegada de acuerdo a coordinación con el cliente. Aperturas limpias y cambio de cerraduras de urgencia.",
+  title: "Urgencias Cerrajería ATM en todo Chile | Keytek",
+  description: "Soporte de emergencia para cajeros automáticos (ATM) en todo Chile. Apertura técnica de bóvedas y cambio de combinación ante bloqueos o intentos de robo.",
 }
+
+const DISPATCH_HUBS = [
+  "Arica",
+  "Iquique",
+  "Antofagasta",
+  "La Serena",
+  "Valparaíso",
+  "Santiago (Base Central)",
+  "Rancagua",
+  "Talca",
+  "Concepción",
+  "Temuco",
+  "Valdivia",
+  "Puerto Montt",
+  "Punta Arenas"
+]
 
 export default function EmergenciasPage() {
   const phoneRaw = CONTACT_INFO.phoneRaw
-  const whatsappUrl = `https://wa.me/${phoneRaw}?text=${encodeURIComponent("Hola, necesito un cerrajero urgente de inmediato...")}`
+  const whatsappUrl = `https://wa.me/${phoneRaw}?text=${encodeURIComponent("Hola, necesito asistencia técnica URGENTE para un cajero automático (ATM).")}`
 
   return (
     <>
       {/* Emergency Main Banner (Warning Red & Deep Navy Theme) */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-red-700 via-[#0F2A4A] to-[#0F2A4A] py-16 lg:py-24 text-white text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-red-750 via-[#0F2A4A] to-[#0F2A4A] py-16 lg:py-24 text-white text-center">
         
         {/* Subtle PCB line decoration */}
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
@@ -32,15 +48,15 @@ export default function EmergenciasPage() {
           {/* Active pulse status */}
           <div className="inline-flex items-center gap-2 rounded-full bg-red-600 px-4 py-1.5 text-xs font-bold text-white uppercase tracking-wider mb-8 animate-pulse shadow-lg shadow-red-600/30">
             <span className="flex h-2.5 w-2.5 rounded-full bg-white"></span>
-            Técnicos de turno disponibles ahora
+            Soporte de Emergencia ATM 24/7
           </div>
 
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-            Cerrajero de Urgencia <span className="text-red-500">Express</span>
+            Urgencias Técnicas en <span className="text-red-500">Cajeros Automáticos</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-250 mb-12 max-w-2xl leading-relaxed">
-            ¿Perdiste tus llaves, te las robaron o la puerta quedó trabada? No te preocupes. Llámanos o escríbenos. Llegada y atención **de acuerdo a coordinación** en todo Santiago.
+          <p className="text-lg sm:text-xl text-gray-250 mb-12 max-w-3xl leading-relaxed">
+            ¿Cerradura digital Cencon bloqueada, fallo en retardo electrónico o daños tras un intento de robo? Coordinamos de forma inmediata el despacho de técnicos especializados a cualquier región de Chile.
           </p>
 
           {/* GIANT mobile-friendly CTA button */}
@@ -57,7 +73,7 @@ export default function EmergenciasPage() {
               <svg className="h-6 w-6 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              <span>WHATSAPP URGENTE</span>
+              <span>SOPORTE URGENTE ATM</span>
             </a>
           </div>
 
@@ -66,32 +82,32 @@ export default function EmergenciasPage() {
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
               <div>
-                <span className="block font-bold text-sm">Respuesta Express</span>
-                <span className="text-xs text-gray-300">Llegada en 20 min promedio</span>
+                <span className="block font-bold text-sm">Respuesta Coordinada</span>
+                <span className="text-xs text-gray-300">Logística de traslado ágil</span>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
               <div>
-                <span className="block font-bold text-sm">Sin Daños Extra</span>
-                <span className="text-xs text-gray-300">Apertura técnica no invasiva</span>
+                <span className="block font-bold text-sm">Apertura de Precisión</span>
+                <span className="text-xs text-gray-300">Técnicas 100% no destructivas</span>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
               <div>
-                <span className="block font-bold text-sm">Precio Justo</span>
-                <span className="text-xs text-gray-300">Tarifa fija acordada previamente</span>
+                <span className="block font-bold text-sm">Técnicos Homologados</span>
+                <span className="text-xs text-gray-300">Expertos en cerraduras Cencon</span>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
               <CheckCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
               <div>
-                <span className="block font-bold text-sm">Garantía Keytek</span>
-                <span className="text-xs text-gray-300">Respaldo total en el servicio</span>
+                <span className="block font-bold text-sm">Protocolo Bancario</span>
+                <span className="text-xs text-gray-300">Confidencialidad absoluta</span>
               </div>
             </div>
           </div>
@@ -99,34 +115,34 @@ export default function EmergenciasPage() {
         </div>
       </section>
 
-      {/* Emergency Comunas Coverage Alert */}
+      {/* Emergency Hubs Coverage Alert */}
       <section className="py-12 bg-keytek-bg border-b border-gray-150">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
           <h3 className="font-heading text-lg font-bold text-keytek-text mb-4">
-            Comunas con unidades móviles activas hoy:
+            Hubs logísticos para respuesta técnica urgente a cajeros automáticos:
           </h3>
           <div className="flex flex-wrap justify-center gap-2">
-            {COMUNAS.map((comuna) => (
+            {DISPATCH_HUBS.map((hub) => (
               <span
-                key={comuna}
+                key={hub}
                 className="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700 ring-1 ring-inset ring-red-600/20"
               >
-                {comuna}
+                {hub}
               </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Backup Form for non-lockouts */}
+      {/* Backup Form for programed operations */}
       <section className="py-20 bg-keytek-bg-soft">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-2xl mx-auto mb-10 text-center">
             <h2 className="font-heading text-2xl font-bold text-keytek-text mb-2">
-              ¿No tienes prisa? Envía un mensaje
+              Solicitar Soporte Programado o Cotización
             </h2>
             <p className="text-keytek-text-muted text-sm leading-relaxed">
-              Si es un requerimiento programado (cambio de chapa para mañana, cotización de cajas fuertes, etc.), completa el formulario y te responderemos por correo o teléfono.
+              Si requiere una mantención preventiva, auditoría de claves, cambio programado de combinación electrónica o reparación estructural de bóvedas, complete el formulario y le responderemos a la brevedad.
             </p>
           </div>
           <ContactForm />

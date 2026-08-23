@@ -6,8 +6,6 @@ import { CONTACT_INFO, SERVICES, COMUNAS } from "@/lib/data"
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
-  // Display only the first 8 comunas in the footer grid to keep layout clean, with a link to view all.
-  const featuredComunas = COMUNAS.slice(0, 8)
 
   return (
     <footer className="bg-[#0F2A4A] text-white pt-16 pb-8 border-t border-[#1B5FA8]/20">
@@ -49,22 +47,16 @@ export function Footer() {
           {/* Column 3: Coverage Areas */}
           <div>
             <h3 className="font-heading text-lg font-bold mb-4 tracking-wide text-gray-100 border-l-4 border-[#4FA8E0] pl-3">
-              Zonas de Cobertura
+              Cobertura
             </h3>
-            <p className="text-xs text-gray-400 mb-3">Atendemos con rapidez en:</p>
-            <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-sm text-gray-300">
-              {featuredComunas.map((comuna) => (
-                <div key={comuna} className="flex items-center gap-1">
-                  <MapPin className="h-3.5 w-3.5 text-[#4FA8E0] shrink-0" />
-                  <span className="truncate">{comuna}</span>
-                </div>
-              ))}
-            </div>
+            <p className="text-sm text-gray-300 leading-relaxed mb-4">
+              Prestamos soporte técnico especializado y apertura de cajeros automáticos (ATM) en todas las regiones y ciudades de Chile, de norte a sur.
+            </p>
             <Link
               href="/zonas"
-              className="inline-block mt-4 text-xs font-semibold text-[#4FA8E0] hover:text-[#9CE0FF] hover:underline"
+              className="inline-block text-xs font-semibold text-[#4FA8E0] hover:text-[#9CE0FF] hover:underline"
             >
-              Ver todas las comunas →
+              Ver regiones de cobertura →
             </Link>
           </div>
 
