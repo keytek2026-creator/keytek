@@ -3,8 +3,8 @@ import { Shield, Clock, Award, Hammer, Lock } from "lucide-react"
 import { CONTACT_INFO } from "@/lib/data"
 
 export const metadata = {
-  title: "Sobre Nosotros | Keytek",
-  description: "Conozca la trayectoria de Keytek. Especialistas en cerrajería de alta seguridad, apertura técnica de bóvedas y soporte técnico de cajeros automáticos (ATM) en todo Chile.",
+  title: "Sobre Nosotros | Vaultec",
+  description: "Conozca la trayectoria de Vaultec. Especialistas en cerrajería de alta seguridad, apertura técnica de bóvedas y soporte técnico de cajeros automáticos (ATM) en todo Chile.",
 }
 
 export default function NosotrosPage() {
@@ -39,7 +39,7 @@ export default function NosotrosPage() {
                   Cerrajería con estándares bancarios modernos
                 </h2>
                 <p className="text-gray-200 text-sm leading-relaxed mb-6">
-                  Keytek nace para dar respuesta a la necesidad de soporte especializado de alta seguridad en cajeros automáticos (ATM). Nos enfocamos en la excelencia técnica, la respuesta logística oportuna en todo el país y el estricto cumplimiento de normas de reserva.
+                  Vaultec nace para dar respuesta a la necesidad de soporte especializado de alta seguridad en cajeros automáticos (ATM). Nos enfocamos en la excelencia técnica, la respuesta logística oportuna en todo el país y el estricto cumplimiento de normas de reserva.
                 </p>
               </div>
 
@@ -55,7 +55,7 @@ export default function NosotrosPage() {
               </h3>
               
               <p className="text-keytek-text-muted text-sm leading-relaxed">
-                Sabemos que la seguridad física de los cajeros automáticos y el dinero en efectivo que contienen no puede quedar en manos de cualquiera. Por eso, en **Keytek** implementamos procesos rigurosos de verificación de antecedentes policiales, comerciales e idoneidad moral de todo nuestro personal técnico.
+                Sabemos que la seguridad física de los cajeros automáticos y el dinero en efectivo que contienen no puede quedar en manos de cualquiera. Por eso, en **Vaultec** implementamos procesos rigurosos de verificación de antecedentes policiales, comerciales e idoneidad moral de todo nuestro personal técnico.
               </p>
 
               <p className="text-keytek-text-muted text-sm leading-relaxed">

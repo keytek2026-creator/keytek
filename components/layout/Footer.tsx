@@ -103,7 +103,7 @@ export function Footer() {
 
         {/* Divider */}
         <div className="border-t border-[#1B5FA8]/20 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {currentYear} Keytek Cerrajería Comercial y Residencial. Todos los derechos reservados.</p>
+          <p>© {currentYear} Vaultec Cerrajería Comercial y Residencial. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
             <Link href="/nosotros" className="hover:text-white transition-colors">
               Nosotros

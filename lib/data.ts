@@ -32,7 +32,7 @@ export const REVIEWS: Review[] = [
     id: "2",
     name: "Alejandro Mendoza",
     rating: 5,
-    text: "Me quedé fuera de mi departamento a las 3 AM. Llamé a Keytek y contestaron de inmediato. El cerrajero llegó con sus herramientas profesionales y en 5 minutos abrió la puerta. El precio fue el acordado por teléfono.",
+    text: "Me quedé fuera de mi departamento a las 3 AM. Llamé a Vaultec y contestaron de inmediato. El cerrajero llegó con sus herramientas profesionales y en 5 minutos abrió la puerta. El precio fue el acordado por teléfono.",
     comuna: "Providencia",
     date: "Hace 1 mes"
   },

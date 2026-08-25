@@ -3,7 +3,7 @@ import { CONTACT_INFO } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Urgencias Cerrajería ATM en todo Chile | Keytek",
+  title: "Urgencias Cerrajería ATM en todo Chile | Vaultec",
   description: "Soporte de emergencia para cajeros automáticos (ATM) en todo Chile. Apertura técnica de bóvedas y cambio de combinación ante bloqueos o intentos de robo.",
 }
 

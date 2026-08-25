@@ -3,8 +3,8 @@ import { CONTACT_INFO } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Contacto | Keytek Cerrajería",
-  description: "Ponte en contacto con Keytek. Teléfono de urgencias rápido, correo electrónico y formulario de cotizaciones para cerrajería en Santiago.",
+  title: "Contacto | Vaultec Cerrajería",
+  description: "Ponte en contacto con Vaultec. Teléfono de urgencias rápido, correo electrónico y formulario de cotizaciones para cerrajería en Santiago.",
 }
 
 export default function ContactoPage() {
@@ -80,7 +80,7 @@ export default function ContactoPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación de cobertura Keytek"
+                  title="Ubicación de cobertura Vaultec"
                 ></iframe>
               </div>
 
