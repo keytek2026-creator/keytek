@@ -16,6 +16,23 @@ export const SERVICES: Service[] = [
     ],
     detailedContent: "La cerrajería de cajeros automáticos requiere una alta especialización y equipamiento de precisión. Ofrecemos asistencia técnica autorizada para la apertura de bóvedas de cajeros automáticos (ATMs) de diversas marcas y modelos con cobertura nacional en todo Chile. Realizamos configuración de cerraduras de retardo electrónico, auditorías de accesos de usuario, cambio de combinaciones electrónicas bajo protocolo bancario y reparación de daños post-vandalismo.",
     emergencia: true
+  },
+  {
+    slug: "instalacion-camaras",
+    title: "Instalación de Cámaras de Seguridad",
+    shortDescription: "Instalación profesional de sistemas de videovigilancia IP, CCTV y analítica de video para hogares, empresas y sucursales bancarias.",
+    description: "Diseño, instalación y configuración de sistemas de cámaras de seguridad de última generación. Trabajamos con tecnología IP de alta definición, cámaras domo, PTZ, y sistemas de grabación en la nube o local (NVR/DVR). Soluciones personalizadas para hogares, comercios, oficinas y entornos bancarios.",
+    iconName: "Camera",
+    features: [
+      "Cámaras IP HD, 4K y cámaras domo para interiores y exteriores",
+      "Sistemas de grabación NVR/DVR con almacenamiento local o en la nube",
+      "Acceso remoto desde celular o computador en tiempo real",
+      "Detección de movimiento con alertas automáticas",
+      "Instalación certificada para entornos bancarios y comerciales",
+      "Cobertura en todo Chile"
+    ],
+    detailedContent: "Nuestro equipo técnico especializado diseña el sistema de videovigilancia ideal según las necesidades específicas de cada cliente. Instalamos cámaras de alta definición con visión nocturna, resistencia a la intemperie (IP66/IP67) y analítica de video inteligente. Configuramos acceso remoto seguro para que puedas monitorear tus instalaciones en tiempo real desde cualquier dispositivo. Realizamos mantención preventiva y correctiva de sistemas existentes.",
+    emergencia: false
   }
 ]
 
