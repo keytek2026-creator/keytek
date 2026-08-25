@@ -1,4 +1,4 @@
-"use server"
+﻿"use server"
 
 import nodemailer from "nodemailer"
 import { supabase } from "./client"
@@ -35,7 +35,7 @@ async function sendLeadEmail(data: LeadInput) {
     })
 
     const mailOptions = {
-      from: `"Keytek Web" <${smtpUser}>`,
+      from: `"Vaultec Web" <${smtpUser}>`,
       to: "contacto@keytek.cl",
       subject: `Nuevo Contacto Web: ${data.nombre} - ${data.servicio}`,
       html: `
@@ -72,7 +72,7 @@ async function sendLeadEmail(data: LeadInput) {
             </tr>
           </table>
           <p style="font-size: 11px; color: #888; margin-top: 25px; text-align: center;">
-            Este correo fue generado de forma automática por el sistema de contacto de Keytek Cerrajería.
+            Este correo fue generado de forma automática por el sistema de contacto de Vaultec Cerrajería.
           </p>
         </div>
       `,

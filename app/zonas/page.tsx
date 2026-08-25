@@ -1,8 +1,8 @@
-import { MapPin, Clock, Navigation, CheckCircle2 } from "lucide-react"
+﻿import { MapPin, Clock, Navigation, CheckCircle2 } from "lucide-react"
 import { ContactForm } from "@/components/sections/ContactForm"
 
 export const metadata = {
-  title: "Cobertura Nacional de Cerrajería ATM | Keytek",
+  title: "Cobertura Nacional de Cerrajería ATM | Vaultec",
   description: "Soporte técnico y apertura de cajeros automáticos (ATM) en todo Chile. Cobertura en todas las regiones de Arica a Punta Arenas.",
 }
 

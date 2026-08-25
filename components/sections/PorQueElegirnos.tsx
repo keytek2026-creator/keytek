@@ -1,4 +1,4 @@
-import { Globe, ShieldCheck, Wrench, Lock } from "lucide-react"
+﻿import { Globe, ShieldCheck, Wrench, Lock } from "lucide-react"
 
 export function PorQueElegirnos() {
   const features = [
@@ -31,7 +31,7 @@ export function PorQueElegirnos() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-heading text-3xl sm:text-4xl font-bold text-keytek-navy mb-4">
-            ¿Por qué elegir a Keytek?
+            ¿Por qué elegir a Vaultec?
           </h2>
           <p className="text-keytek-text-muted text-lg">
             Especialistas en cerrajería bancaria de precisión, ofreciendo soporte técnico de alta seguridad bajo rigurosos estándares y protocolos de confidencialidad.

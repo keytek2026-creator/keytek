@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import * as Icons from "lucide-react"
 import { SERVICES } from "@/lib/data"
 import { ContactForm } from "@/components/sections/ContactForm"
@@ -10,7 +10,7 @@ function ServiceIcon({ name, className }: { name: string; className?: string }) 
 }
 
 export const metadata = {
-  title: "Servicios de Cerrajería | Keytek",
+  title: "Servicios de Cerrajería | Vaultec",
   description: "Apertura de puertas, cambio de cerraduras, cerrajería de cajeros automáticos, cajas fuertes, cerraduras inteligentes, cerrajería comercial e instalación de cámaras de seguridad.",
 }
 

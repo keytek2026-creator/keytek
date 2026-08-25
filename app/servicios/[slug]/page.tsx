@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps) {
   if (!service) return {}
 
   return {
-    title: `${service.title} en Todo Chile | Keytek`,
+    title: `${service.title} en Todo Chile | Vaultec`,
     description: `${service.shortDescription} Soporte técnico de alta seguridad y aperturas técnicas para bancos, entidades financieras y transporte de valores.`,
   }
 }
