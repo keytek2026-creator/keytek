@@ -9,13 +9,12 @@ interface LogoProps {
 export function Logo({ className = "", light = false }: LogoProps) {
   return (
     <Link href="/" className={`flex items-center ${className}`}>
-      {/* Official Brand Logo Image scaled as a landscape rectangle */}
-      <div className="relative flex h-[55px] w-[140px] items-center justify-start shrink-0">
+      {/* Official Brand Logo Image — fluid width, never clips */}
+      <div className="relative flex h-[50px] w-full max-w-[140px] items-center justify-start shrink-0">
         <Image
-          src={light ? "/logo_sinfondo_white.png?v=4" : "/logo_sinfondo.png?v=4"}
+          src={light ? "/logo_sinfondo_white.png?v=5" : "/logo_sinfondo.png?v=5"}
           alt="Keytek Logo"
-          width={140}
-          height={55}
+          fill
           className="object-contain object-left"
           priority
         />
