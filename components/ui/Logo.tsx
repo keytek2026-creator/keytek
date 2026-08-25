@@ -8,24 +8,18 @@ interface LogoProps {
 
 export function Logo({ className = "", light = false }: LogoProps) {
   return (
-    <Link href="/" className={`flex items-center gap-3.5 ${className}`}>
-      {/* Official Brand Logo Image scaled to 100px */}
-      <div className="relative flex h-[100px] w-[100px] items-center justify-center shrink-0">
+    <Link href="/" className={`flex items-center ${className}`}>
+      {/* Official Brand Logo Image scaled as a landscape rectangle */}
+      <div className="relative flex h-[55px] w-[130px] items-center justify-start shrink-0">
         <Image
           src="/logo_sinfondo.png"
           alt="Keytek Logo"
-          width={100}
-          height={100}
-          className="object-contain"
+          width={130}
+          height={55}
+          className="object-contain object-left"
           priority
         />
       </div>
-
-      {/* Brand Name Typography scaled up to match the 100px logo icon */}
-      <span className="font-heading text-3xl font-extrabold tracking-tight leading-none">
-        <span className={light ? "text-white" : "text-[#0F2A4A]"}>KEY</span>
-        <span className="text-[#4FA8E0]">TEK</span>
-      </span>
     </Link>
   )
 }
