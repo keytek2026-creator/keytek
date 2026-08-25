@@ -62,26 +62,44 @@ export default function ContactoPage() {
                     </div>
                   </div>
 
-                  {/* Address */}
+                  {/* Address / Coverage */}
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-keytek-blue shrink-0 mt-0.5" />
                     <div>
-                      <span className="block text-xs font-bold text-keytek-text uppercase tracking-wider mb-0.5">Cobertura Principal</span>
-                      <span className="font-medium text-keytek-navy text-base">Santiago, Región Metropolitana, Chile</span>
+                      <span className="block text-xs font-bold text-keytek-text uppercase tracking-wider mb-0.5">Cobertura Operativa</span>
+                      <span className="font-medium text-keytek-navy text-base">Nacional (Todo Chile de Arica a Punta Arenas)</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="w-full h-[280px] rounded-3xl overflow-hidden shadow-sm border border-gray-150 bg-gray-50 relative flex-grow min-h-[250px]">
-                <iframe
-                  src="https://maps.google.com/maps?q=Santiago,Chile&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                  className="absolute inset-0 w-full h-full border-none"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Ubicación de cobertura Vaultec"
-                ></iframe>
+              {/* National Coverage & Fast Contact Card */}
+              <div className="bg-gradient-to-br from-[#0F2A4A] to-[#1B5FA8] p-8 rounded-3xl text-white shadow-xl flex flex-col justify-between relative overflow-hidden flex-grow min-h-[260px]">
+                <div className="relative z-10">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/30">
+                      <span className="h-2 w-2 rounded-full bg-[#25D366] animate-pulse"></span>
+                      Canal de Atención Activo
+                    </span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold mb-2">
+                    ¿Requieres atención inmediata o cotización rápida?
+                  </h3>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-6">
+                    Escríbenos directamente por WhatsApp para coordinar servicios de cerrajería ATM o proyectos de cámaras de seguridad en cualquier región.
+                  </p>
+                </div>
+
+                <div className="relative z-10">
+                  <a
+                    href={`https://wa.me/${phoneRaw}?text=${encodeURIComponent("Hola Vaultec, necesito cotizar un servicio de seguridad.")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full rounded-2xl bg-[#25D366] hover:bg-[#20ba59] py-3.5 text-sm font-bold text-white shadow-lg hover:scale-[1.02] active:scale-95 transition-all"
+                  >
+                    <span>Conversar por WhatsApp</span>
+                  </a>
+                </div>
               </div>
 
             </div>
