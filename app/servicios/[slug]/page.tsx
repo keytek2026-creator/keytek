@@ -144,7 +144,8 @@ export default function ServiceDetailPage({ params }: ServiceDetailPageProps) {
               <ContactForm
                 defaultService={service.slug}
                 title="Presupuesto a Medida"
-                subtitle={`Cotiza la tarifa para el servicio de ${service.title} en tu comuna.`}
+                subtitle={`Cotiza el servicio de ${service.title} en tu región o comuna.`}
+                compact={true}
               />
             </div>
 

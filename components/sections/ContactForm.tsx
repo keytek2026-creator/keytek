@@ -75,12 +75,14 @@ interface ContactFormProps {
   defaultService?: string
   title?: string
   subtitle?: string
+  compact?: boolean
 }
 
 export function ContactForm({
   defaultService = "",
-  title = "Solicitar Presupuesto o Cerrajero",
-  subtitle = "Completa el formulario y te responderemos a la brevedad con una cotización a tu medida."
+  title = "Solicitar Presupuesto",
+  subtitle = "Completa el formulario y te responderemos a la brevedad con una cotización a tu medida.",
+  compact = false
 }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -106,14 +108,14 @@ export function ContactForm({
       if (result.success) {
         toast.add({
           title: "¡Formulario enviado!",
-          description: "Hemos recibido tus datos. Un cerrajero se pondrá en contacto contigo de inmediato.",
+          description: "Hemos recibido tus datos. Un especialista se pondrá en contacto contigo a la brevedad.",
           type: "success",
         })
         form.reset({
           nombre: "",
           telefono: "",
           comuna: "",
-          servicio: "",
+          servicio: defaultService || "",
           mensaje: "",
         })
       } else {
@@ -136,26 +138,26 @@ export function ContactForm({
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-white rounded-3xl border border-gray-150 p-6 sm:p-10 shadow-xl shadow-keytek-navy/5">
-      <div className="text-center mb-8">
-        <h3 className="font-heading text-2xl font-bold text-keytek-text mb-2">
+    <div className={`w-full ${compact ? "p-5 sm:p-6" : "max-w-2xl mx-auto p-6 sm:p-10"} bg-white rounded-3xl border border-gray-150 shadow-xl shadow-keytek-navy/5`}>
+      <div className={`text-center ${compact ? "mb-6" : "mb-8"}`}>
+        <h3 className={`font-heading font-bold text-keytek-text ${compact ? "text-xl mb-1.5" : "text-2xl mb-2"}`}>
           {title}
         </h3>
-        <p className="text-keytek-text-muted text-sm leading-relaxed">
+        <p className="text-keytek-text-muted text-xs sm:text-sm leading-relaxed">
           {subtitle}
         </p>
       </div>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <form onSubmit={form.handleSubmit(onSubmit)} className={compact ? "space-y-4" : "space-y-6"}>
+          <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-5"}>
             {/* Nombre */}
             <FormField
               control={form.control}
               name="nombre"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold">Nombre Completo</FormLabel>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Nombre Completo</FormLabel>
                   <FormControl>
                     <Input placeholder="Ej. Juan Pérez" {...field} className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50" />
                   </FormControl>
@@ -170,7 +172,7 @@ export function ContactForm({
               name="telefono"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold">Teléfono de Contacto</FormLabel>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Teléfono de Contacto</FormLabel>
                   <FormControl>
                     <Input placeholder="Ej. +56 9 1234 5678" {...field} className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50" />
                   </FormControl>
@@ -180,18 +182,18 @@ export function ContactForm({
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-5"}>
             {/* Comuna */}
             <FormField
               control={form.control}
               name="comuna"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold">Comuna de Residencia</FormLabel>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Región / Comuna</FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger className="rounded-xl border-gray-250 focus:ring-keytek-blue/50 text-left">
-                        <SelectValue placeholder="Selecciona tu comuna" />
+                        <SelectValue placeholder="Selecciona tu región o comuna" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent className="max-h-[300px] bg-white border border-gray-150 rounded-xl shadow-lg">
@@ -213,7 +215,7 @@ export function ContactForm({
               name="servicio"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold">Servicio Requerido</FormLabel>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Servicio Requerido</FormLabel>
                   <Select onValueChange={field.onChange} value={field.value}>
                     <FormControl>
                       <SelectTrigger className="rounded-xl border-gray-250 focus:ring-keytek-blue/50 text-left">
@@ -240,13 +242,13 @@ export function ContactForm({
             name="mensaje"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-keytek-text font-semibold">Detalles del Requerimiento</FormLabel>
+                <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Detalles del Requerimiento</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Describe brevemente lo que necesitas (Ej: Se quedó la llave puesta adentro, necesito cambiar chapa Odis, etc.)"
-                    rows={4}
+                    placeholder="Describe brevemente tu requerimiento (ej: ubicación, tipo de servicio, cantidad de equipos o cámaras...)"
+                    rows={compact ? 3 : 4}
                     {...field}
-                    className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50"
+                    className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50 text-sm"
                   />
                 </FormControl>
                 <FormMessage />
@@ -258,16 +260,16 @@ export function ContactForm({
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-[#1B5FA8] hover:bg-[#0F2A4A] text-white py-6 rounded-xl font-bold transition-all shadow-md shadow-keytek-blue/20 hover:shadow-lg flex items-center justify-center gap-2 text-base"
+            className={`w-full bg-[#1B5FA8] hover:bg-[#0F2A4A] text-white rounded-xl font-bold transition-all shadow-md shadow-keytek-blue/20 hover:shadow-lg flex items-center justify-center gap-2 ${compact ? "py-4 text-sm" : "py-6 text-base"}`}
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                <span>Procesando solicitud...</span>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <span>Procesando...</span>
               </>
             ) : (
               <>
-                <Send className="h-5 w-5" />
+                <Send className="h-4 w-4" />
                 <span>Enviar Solicitud</span>
               </>
             )}
