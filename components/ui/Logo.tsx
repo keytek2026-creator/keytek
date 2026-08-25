@@ -12,7 +12,7 @@ export function Logo({ className = "", light = false }: LogoProps) {
       {/* Official Brand Logo Image scaled to 100px */}
       <div className="relative flex h-[100px] w-[100px] items-center justify-center shrink-0">
         <Image
-          src="/Futuristic_Logo_with_Interlocking__K_-removebg-preview.png"
+          src="/logo_sinfondo.png"
           alt="Keytek Logo"
           width={100}
           height={100}
