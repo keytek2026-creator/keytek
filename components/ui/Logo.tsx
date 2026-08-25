@@ -10,11 +10,11 @@ export function Logo({ className = "", light = false }: LogoProps) {
   return (
     <Link href="/" className={`flex items-center ${className}`}>
       <Image
-        src={light ? "/logo_sinfondo_white.png?v=8" : "/logo_sinfondo.png?v=8"}
+        src={light ? "/logo_sinfondo_white.png?v=9" : "/logo_sinfondo.png?v=9"}
         alt="Keytek Logo"
-        width={1259}
-        height={350}
-        className="h-[36px] w-auto object-contain"
+        width={2048}
+        height={682}
+        className="h-[40px] w-auto"
         priority
         unoptimized
       />
