@@ -28,9 +28,12 @@ export const metadata: Metadata = {
   keywords: ["cerrajero cajeros", "cerrajeria cajeros automaticos", "apertura cajeros", "seguridad atm chile", "cerrajería vaultec", "cencon chile", "kaba mas", "la gard chile"],
   metadataBase: new URL("https://www.keytek.cl"),
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon.png?v=solov1", type: "image/png" },
+      { url: "/favicon.ico?v=solov1" }
+    ],
+    shortcut: "/favicon.ico?v=solov1",
+    apple: "/favicon.png?v=solov1",
   },
   openGraph: {
     title: "Vaultec | Cerrajería de Alta Seguridad para Cajeros Automáticos (ATM) en Chile",
