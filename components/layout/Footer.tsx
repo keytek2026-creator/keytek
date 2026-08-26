@@ -16,11 +16,11 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Logo light className="mb-2" />
             <p className="text-sm text-gray-300 leading-relaxed">
-              Cerrajería profesional para hogares y comercios en Santiago, y cerrajería de cajeros automáticos (ATM) con cobertura nacional en todo Chile.
+              Cerrajería de alta seguridad para cajeros automáticos (ATM) e instalación profesional de sistemas de videovigilancia CCTV con cobertura en todo Chile.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm text-[#4FA8E0] font-semibold">
               <Clock className="h-4 w-4 shrink-0" />
-              <span>Atención express en terreno</span>
+              <span>Soporte y atención coordinada</span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-[#4FA8E0] shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-xs text-gray-400 font-medium">Cobertura</span>
-                  <span>Región Metropolitana, Chile</span>
+                  <span>Nacional (Todo Chile)</span>
                 </div>
               </div>
             </div>
