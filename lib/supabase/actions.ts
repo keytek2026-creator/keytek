@@ -17,7 +17,10 @@ async function sendLeadEmail(data: LeadInput) {
   const smtpPort = process.env.SMTP_PORT || "465"
   const smtpUser = process.env.SMTP_USER
   const smtpPassword = process.env.SMTP_PASSWORD
-  const notificationEmail = process.env.NOTIFICATION_EMAIL || "carlos.ramirez@vaultec.cl"
+  let notificationEmail = process.env.NOTIFICATION_EMAIL || "carlos.ramirez@vaultec.cl"
+  if (notificationEmail.includes("keytek")) {
+    notificationEmail = "carlos.ramirez@vaultec.cl"
+  }
 
   if (!smtpUser || !smtpPassword) {
     console.warn("SMTP credentials (SMTP_USER / SMTP_PASSWORD) not configured. Email notification skipped.")
