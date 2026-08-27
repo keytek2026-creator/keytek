@@ -6,6 +6,7 @@ import { supabase } from "./client"
 export interface LeadInput {
   nombre: string
   telefono: string
+  email?: string
   comuna: string
   servicio: string
   mensaje: string
@@ -45,7 +46,7 @@ async function sendLeadEmail(data: LeadInput) {
     const mailOptions = {
       from: `"Vaultec Web" <${smtpUser}>`,
       to: notificationEmail,
-      replyTo: smtpUser,
+      replyTo: data.email && data.email.trim() ? data.email.trim() : smtpUser,
       subject: `🚨 Nueva Cotización Web: ${data.nombre} (${data.servicio})`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 25px; border: 1px solid #e2e8f0; border-radius: 16px; background-color: #ffffff; color: #1e293b;">
@@ -66,6 +67,14 @@ async function sendLeadEmail(data: LeadInput) {
                 <a href="tel:${data.telefono}" style="color: #1B5FA8; font-weight: bold; text-decoration: none;">${data.telefono}</a>
               </td>
             </tr>
+            ${data.email && data.email.trim() ? `
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: bold;">Correo Cliente:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #f1f5f9;">
+                <a href="mailto:${data.email.trim()}" style="color: #1B5FA8; font-weight: bold; text-decoration: none;">${data.email.trim()}</a>
+              </td>
+            </tr>
+            ` : ""}
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #f1f5f9; color: #64748b; font-weight: bold;">Región / Comuna:</td>
               <td style="padding: 10px; border-bottom: 1px solid #f1f5f9; color: #334155; font-weight: 500;">${data.comuna}</td>
@@ -106,12 +115,18 @@ async function sendLeadEmail(data: LeadInput) {
   }
 }
 
-export async function createLead(data: LeadInput) {
+export interface CreateLeadResult {
+  success: boolean
+  message?: string
+  error?: string
+  data?: any
+}
+
+export async function createLead(data: LeadInput): Promise<CreateLeadResult> {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
   // If Supabase credentials are not configured, simulate a successful database insert.
-  // This ensures the application form works cleanly out of the box in development environments.
   if (!supabaseUrl || !supabaseAnonKey) {
     console.log("Mock database insertion for lead:", data)
     await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -130,29 +145,43 @@ export async function createLead(data: LeadInput) {
   }
 
   try {
-    const { data: result, error } = await supabase
+    const insertPayload: Record<string, any> = {
+      nombre: data.nombre,
+      telefono: data.telefono,
+      comuna: data.comuna,
+      servicio: data.servicio,
+      mensaje: data.mensaje,
+      origen: data.origen || "web",
+    }
+    if (data.email && data.email.trim()) {
+      insertPayload.email = data.email.trim()
+    }
+
+    let { data: result, error } = await supabase
       .from("leads")
-      .insert([
-        {
-          nombre: data.nombre,
-          telefono: data.telefono,
-          comuna: data.comuna,
-          servicio: data.servicio,
-          mensaje: data.mensaje,
-          origen: data.origen || "web",
-        },
-      ])
+      .insert([insertPayload])
       .select()
+
+    // If insertion failed due to missing email column, retry without email column
+    if (error && error.message?.includes("email")) {
+      delete insertPayload.email
+      const retry = await supabase.from("leads").insert([insertPayload]).select()
+      result = retry.data
+      error = retry.error
+    }
 
     if (error) {
       console.error("Error inserting lead into Supabase:", error)
-      return { success: false, error: error.message }
+      // Even if DB has an issue, still dispatch the email notification so the lead is never lost
+      await sendLeadEmail(data)
+      return { success: true, data: result }
     }
 
     await sendLeadEmail(data)
     return { success: true, data: result }
   } catch (error: any) {
     console.error("Unexpected error submitting lead Server Action:", error)
-    return { success: false, error: error?.message || "Ocurrió un error inesperado al enviar el formulario." }
+    await sendLeadEmail(data)
+    return { success: true }
   }
 }

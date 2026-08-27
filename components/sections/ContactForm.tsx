@@ -62,6 +62,13 @@ const formSchema = z.object({
         message: "El teléfono solo debe contener números (puede iniciar con + y contener espacios o guiones).",
       }
     ),
+  email: z.string()
+    .refine(
+      (val) => !val || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim()),
+      { message: "Por favor, ingresa un formato de correo válido (ej: contacto@empresa.cl)." }
+    )
+    .optional()
+    .or(z.literal("")),
   comuna: z.string().min(1, "Selecciona una comuna de la lista."),
   servicio: z.string().min(1, "Selecciona el servicio requerido."),
   mensaje: z.string().min(5, {
@@ -91,6 +98,7 @@ export function ContactForm({
     defaultValues: {
       nombre: "",
       telefono: "",
+      email: "",
       comuna: "",
       servicio: defaultService,
       mensaje: "",
@@ -114,6 +122,7 @@ export function ContactForm({
         form.reset({
           nombre: "",
           telefono: "",
+          email: "",
           comuna: "",
           servicio: defaultService || "",
           mensaje: "",
@@ -183,6 +192,21 @@ export function ContactForm({
           </div>
 
           <div className={compact ? "grid grid-cols-1 gap-4" : "grid grid-cols-1 sm:grid-cols-2 gap-5"}>
+            {/* Correo Electrónico */}
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Correo Electrónico <span className="text-gray-400 font-normal text-xs">(Opcional)</span></FormLabel>
+                  <FormControl>
+                    <Input type="email" placeholder="Ej. contacto@empresa.cl" {...field} className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50" />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
             {/* Comuna */}
             <FormField
               control={form.control}
@@ -208,33 +232,33 @@ export function ContactForm({
                 </FormItem>
               )}
             />
-
-            {/* Servicio */}
-            <FormField
-              control={form.control}
-              name="servicio"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Servicio Requerido</FormLabel>
-                  <Select onValueChange={field.onChange} value={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="rounded-xl border-gray-250 focus:ring-keytek-blue/50 text-left">
-                        <SelectValue placeholder="Selecciona el servicio" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent className="bg-white border border-gray-150 rounded-xl shadow-lg">
-                      {SERVICES.map((service) => (
-                        <SelectItem key={service.slug} value={service.slug} className="hover:bg-keytek-bg-soft">
-                          {service.title}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
           </div>
+
+          {/* Servicio */}
+          <FormField
+            control={form.control}
+            name="servicio"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Servicio Requerido</FormLabel>
+                <Select onValueChange={field.onChange} value={field.value}>
+                  <FormControl>
+                    <SelectTrigger className="rounded-xl border-gray-250 focus:ring-keytek-blue/50 text-left">
+                      <SelectValue placeholder="Selecciona el servicio" />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent className="bg-white border border-gray-150 rounded-xl shadow-lg">
+                    {SERVICES.map((service) => (
+                      <SelectItem key={service.slug} value={service.slug} className="hover:bg-keytek-bg-soft">
+                        {service.title}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
 
           {/* Mensaje */}
           <FormField
