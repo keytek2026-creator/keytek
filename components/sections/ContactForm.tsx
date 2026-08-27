@@ -63,12 +63,17 @@ const formSchema = z.object({
       }
     ),
   email: z.string()
+    .min(1, { message: "El correo electrónico es obligatorio." })
+    .email({ message: "Ingresa un correo electrónico válido (ej: contacto@empresa.cl)." })
     .refine(
-      (val) => !val || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim()),
-      { message: "Por favor, ingresa un formato de correo válido (ej: contacto@empresa.cl)." }
-    )
-    .optional()
-    .or(z.literal("")),
+      (val) => {
+        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return regex.test(val.trim());
+      },
+      {
+        message: "Por favor, ingresa un formato de correo válido (ej: contacto@empresa.cl).",
+      }
+    ),
   comuna: z.string().min(1, "Selecciona una comuna de la lista."),
   servicio: z.string().min(1, "Selecciona el servicio requerido."),
   mensaje: z.string().min(5, {
@@ -198,7 +203,7 @@ export function ContactForm({
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Correo Electrónico <span className="text-gray-400 font-normal text-xs">(Opcional)</span></FormLabel>
+                  <FormLabel className="text-keytek-text font-semibold text-xs sm:text-sm">Correo Electrónico</FormLabel>
                   <FormControl>
                     <Input type="email" placeholder="Ej. contacto@empresa.cl" {...field} className="rounded-xl border-gray-250 focus-visible:ring-keytek-blue/50" />
                   </FormControl>
