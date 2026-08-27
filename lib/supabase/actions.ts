@@ -1,4 +1,4 @@
-﻿"use server"
+"use server"
 
 import nodemailer from "nodemailer"
 import { supabase } from "./client"
@@ -36,7 +36,7 @@ async function sendLeadEmail(data: LeadInput) {
 
     const mailOptions = {
       from: `"Vaultec Web" <${smtpUser}>`,
-      to: "contacto@keytek.cl",
+      to: "contacto@vaultec.cl",
       subject: `Nuevo Contacto Web: ${data.nombre} - ${data.servicio}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fcfcfc;">

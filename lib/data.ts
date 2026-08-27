@@ -93,6 +93,6 @@ export const CONTACT_INFO = {
   phone: "+56 9 1234 5678",
   phoneRaw: "56912345678",
   whatsappText: "Hola, necesito soporte técnico o apertura para un cajero automático (ATM).",
-  email: "contacto@keytek.cl",
+  email: "contacto@vaultec.cl",
   schedule: "Atención de Lunes a Domingo"
 }
