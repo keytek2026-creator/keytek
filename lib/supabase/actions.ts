@@ -17,7 +17,7 @@ async function sendLeadEmail(data: LeadInput) {
   const smtpPort = process.env.SMTP_PORT || "465"
   const smtpUser = process.env.SMTP_USER
   const smtpPassword = process.env.SMTP_PASSWORD
-  const notificationEmail = process.env.NOTIFICATION_EMAIL || "contacto@vaultec.cl"
+  const notificationEmail = process.env.NOTIFICATION_EMAIL || "carlos.ramirez@vaultec.cl"
 
   if (!smtpUser || !smtpPassword) {
     console.warn("SMTP credentials (SMTP_USER / SMTP_PASSWORD) not configured. Email notification skipped.")
@@ -42,6 +42,7 @@ async function sendLeadEmail(data: LeadInput) {
     const mailOptions = {
       from: `"Vaultec Web" <${smtpUser}>`,
       to: notificationEmail,
+      replyTo: smtpUser,
       subject: `🚨 Nueva Cotización Web: ${data.nombre} (${data.servicio})`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 25px; border: 1px solid #e2e8f0; border-radius: 16px; background-color: #ffffff; color: #1e293b;">
