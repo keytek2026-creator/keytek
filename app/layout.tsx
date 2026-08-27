@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: "Vaultec | Cerrajería de Alta Seguridad para Cajeros Automáticos (ATM) en Chile",
   description: "Servicios altamente especializados de apertura técnica, cambio de combinación y soporte de seguridad para cajeros automáticos (ATM) a nivel nacional en todo Chile.",
   keywords: ["cerrajero cajeros", "cerrajeria cajeros automaticos", "apertura cajeros", "seguridad atm chile", "cerrajería vaultec", "cencon chile", "kaba mas", "la gard chile"],
-  metadataBase: new URL("https://www.keytek.cl"),
+  metadataBase: new URL("https://www.vaultec.cl"),
   icons: {
     icon: [
       { url: "/favicon.png?v=solov1", type: "image/png" },
@@ -54,7 +54,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Locksmith",
     "name": "Vaultec Cerrajería de Cajeros Automáticos (ATM)",
-    "image": "https://www.keytek.cl/images/og-image.jpg",
+    "image": "https://www.vaultec.cl/images/og-image.jpg",
     "description": "Cerrajería de cajeros automáticos de alta seguridad. Apertura técnica, cambio de combinación y mantención de cerraduras de retardo a nivel nacional en todo Chile.",
     "telephone": CONTACT_INFO.phone,
     "email": CONTACT_INFO.email,
@@ -69,7 +69,7 @@ export default function RootLayout({
       "latitude": -33.4489,
       "longitude": -70.6693
     },
-    "url": "https://www.keytek.cl",
+    "url": "https://www.vaultec.cl",
     "priceRange": "$$",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
