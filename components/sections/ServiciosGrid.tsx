@@ -146,7 +146,7 @@ export function ServiciosGrid() {
               <div className="flex items-center justify-between mb-6">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-700 border border-amber-200">
                   <Sparkles className="h-3.5 w-3.5" />
-                  Hogar & Oficinas
+                  Santiago & RM
                 </span>
                 <span className="text-xs font-mono font-semibold text-gray-400">03 // PINTURA</span>
               </div>
@@ -159,12 +159,12 @@ export function ServiciosGrid() {
                   <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#0F2A4A]">
                     Pintura de Interiores
                   </h3>
-                  <p className="text-xs font-semibold text-amber-600 uppercase tracking-wider">Casas y Departamentos</p>
+                  <p className="text-xs font-semibold text-amber-600 uppercase tracking-wider">Santiago (Región Metropolitana)</p>
                 </div>
               </div>
 
               <p className="text-keytek-text-muted text-sm leading-relaxed mb-6">
-                Renovación y pintura profesional de muros, cielos y molduras. Preparación completa de superficies, empaste, reparación de grietas y terminaciones finas con máxima limpieza.
+                Renovación y pintura profesional de muros, cielos y molduras en Santiago. Preparación completa de superficies, empaste, reparación de grietas y finas terminaciones con máxima limpieza.
               </p>
 
               {/* Sub-features checklist */}
@@ -183,7 +183,7 @@ export function ServiciosGrid() {
                 </div>
                 <div className="flex items-center gap-2 p-2 rounded-xl bg-[#F4F8FC]">
                   <Sparkles className="h-4 w-4 text-[#4FA8E0] shrink-0" />
-                  <span>Pinturas Lavables y Antihongos</span>
+                  <span>Cobertura Exclusiva Santiago</span>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export function ServiciosGrid() {
               href="/servicios/pintura-interiores"
               className="inline-flex items-center justify-between w-full rounded-2xl bg-gradient-to-r from-[#0F2A4A] to-[#1B5FA8] hover:from-[#1B5FA8] hover:to-[#4FA8E0] p-4 text-sm font-bold text-white transition-all shadow-md"
             >
-              <span>Cotizar Pintura de Interiores</span>
+              <span>Cotizar Pintura en Santiago</span>
               <ArrowRight className="h-4 w-4 text-[#9CE0FF]" />
             </Link>
           </div>
