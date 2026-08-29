@@ -16,7 +16,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Logo light className="mb-2" />
             <p className="text-sm text-gray-300 leading-relaxed">
-              Cerrajería de alta seguridad para cajeros automáticos (ATM) e instalación profesional de sistemas de videovigilancia CCTV con cobertura en todo Chile.
+              Cerrajería de alta seguridad para cajeros automáticos (ATM), sistemas de videovigilancia CCTV y pintura profesional de interiores para casas y departamentos en todo Chile.
             </p>
             <div className="flex items-center gap-3 mt-2 text-sm text-[#4FA8E0] font-semibold">
               <Clock className="h-4 w-4 shrink-0" />

@@ -33,6 +33,23 @@ export const SERVICES: Service[] = [
     ],
     detailedContent: "Nuestro equipo técnico especializado diseña el sistema de videovigilancia ideal según las necesidades específicas de cada cliente. Instalamos cámaras de alta definición con visión nocturna, resistencia a la intemperie (IP66/IP67) y analítica de video inteligente. Configuramos acceso remoto seguro para que puedas monitorear tus instalaciones en tiempo real desde cualquier dispositivo. Realizamos mantención preventiva y correctiva de sistemas existentes.",
     emergencia: false
+  },
+  {
+    slug: "pintura-interiores",
+    title: "Pintura de Interiores (Casas y Departamentos)",
+    shortDescription: "Servicio profesional de pintura, preparación de muros, empaste y finas terminaciones para casas, departamentos y oficinas.",
+    description: "Renovación y pintura profesional de interiores para casas, departamentos, oficinas y locales comerciales. Realizamos preparación exhaustiva de superficies (reparación de grietas, empaste, lijado y sellado), aplicación de pinturas lavables, esmaltes al agua, látex antihongos y terminaciones finas de alta durabilidad con máxima limpieza.",
+    iconName: "Paintbrush",
+    features: [
+      "Pintura de muros, cielos, molduras, puertas y rodapiés",
+      "Preparación integral: reparación de fisuras, empaste y lijado prolijo",
+      "Protección total de pisos, muebles, zócalos y ventanas",
+      "Materiales y pinturas de primera calidad (esmaltes al agua, látex lavable, antihongos)",
+      "Limpieza rigurosa y entrega de ambientes impecables listos para habitar",
+      "Presupuestos claros y cumplimiento estricto de plazos acordados"
+    ],
+    detailedContent: "Nuestro servicio de pintura de interiores está diseñado para transformar y renovar tus espacios residenciales y comerciales con acabados perfectos. Nos encargamos de todo el proceso: desde el encintado y protección de pisos, muebles y luminarias, hasta la corrección de imperfecciones en muros con masilla y empaste. Aplicamos las mejores marcas de pintura del mercado con técnicas profesionales de rodillo y brocha para un acabado uniforme y sin marcas. Garantizamos orden, limpieza durante toda la faena y puntualidad en los tiempos de entrega.",
+    emergencia: false
   }
 ]
 

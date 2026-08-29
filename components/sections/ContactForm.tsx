@@ -63,17 +63,10 @@ const formSchema = z.object({
       }
     ),
   email: z.string()
-    .min(1, { message: "El correo electrónico es obligatorio." })
-    .email({ message: "Ingresa un correo electrónico válido (ej: contacto@empresa.cl)." })
-    .refine(
-      (val) => {
-        const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return regex.test(val.trim());
-      },
-      {
-        message: "Por favor, ingresa un formato de correo válido (ej: contacto@empresa.cl).",
-      }
-    ),
+    .refine((val) => !val || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val), {
+      message: "Ingresa un formato de correo válido (ej: contacto@empresa.cl).",
+    })
+    .optional(),
   comuna: z.string().min(1, "Selecciona una comuna de la lista."),
   servicio: z.string().min(1, "Selecciona el servicio requerido."),
   mensaje: z.string().min(5, {
